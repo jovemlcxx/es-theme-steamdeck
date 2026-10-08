@@ -100,6 +100,6 @@ To replace a grey capsule, drop your own PNG with the system's name in `systems/
 
 ## Credits and license
 
-**Testing:** [Sabrina Broch](https://www.youtube.com/@sabrinabroch1/videos) tested the theme, the boot video and the UI Fixes on the systems marked ✅ above. Thank you!
+**Testing:** huge thanks to [Sabrina Broch](https://www.youtube.com/@sabrinabroch1/videos), a beloved YouTuber of the Brazilian R36S community, who generously tested the theme, the boot video and the UI Fixes on the systems marked ✅ above. This project would not be confirmed on so many systems without her help. Go check out her channel!
 
 **License:** [CC BY-NC 4.0](LICENSE)

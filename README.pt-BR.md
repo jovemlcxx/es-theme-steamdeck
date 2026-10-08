@@ -100,6 +100,6 @@ Para trocar uma capa cinza, coloque seu PNG com o nome do sistema em `systems/ca
 
 ## Créditos e licença
 
-**Testes:** [Sabrina Broch](https://www.youtube.com/@sabrinabroch1/videos) testou o tema, o vídeo de boot e o UI Fixes nos sistemas marcados com ✅ acima. Obrigado!
+**Testes:** um agradecimento enorme à [Sabrina Broch](https://www.youtube.com/@sabrinabroch1/videos), querida YouTuber da comunidade brasileira de R36S, que testou com todo carinho o tema, o vídeo de boot e o UI Fixes nos sistemas marcados com ✅ acima. Sem a ajuda dela este projeto não estaria confirmado em tantos sistemas. Conheça o canal dela!
 
 **Licença:** [CC BY-NC 4.0](LICENSE)
