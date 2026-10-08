@@ -1,0 +1,27 @@
+<theme>
+   <formatVersion>7</formatVersion>
+   <variables lang="fr">
+      <helpSelect>SÉLECTIONNER</helpSelect>
+      <aspectRatioLabel>Format d'Image</aspectRatioLabel>
+      <colorSchemeLabel>Schéma de Couleur</colorSchemeLabel>
+      <darkLabel>Sombre</darkLabel>
+      <lightLabel>Clair</lightLabel>
+      <helpBack>RETOUR</helpBack>
+      <libraryLabel>BIBLIOTHÈQUE</libraryLabel>
+      <favoritesLabel>FAVORIS</favoritesLabel>
+      <recentTabLabel>RÉCENTS</recentTabLabel>
+      <playLabel>Jouer</playLabel>
+      <lastPlayedLabel>DERNIÈRE SESSION</lastPlayedLabel>
+      <playCountLabel>PARTIES JOUÉES</playCountLabel>
+      <bannerLang>-fr</bannerLang>
+      <dateFormat>%d/%m/%Y</dateFormat>
+      <helpACircleX>0.5367</helpACircleX>
+      <helpATextX>0.5792</helpATextX>
+      <helpATextW>0.2152</helpATextW>
+      <helpBCircleX>0.8257</helpBCircleX>
+      <helpBTextX>0.8683</helpBTextX>
+      <helpBTextW>0.1161</helpBTextW>
+      <tabPillX>0.1812</tabPillX>
+      <tabPillW>0.2375</tabPillW>
+   </variables>
+</theme>

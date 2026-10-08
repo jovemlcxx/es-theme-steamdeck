@@ -1,0 +1,28 @@
+<theme>
+   <formatVersion>7</formatVersion>
+   <variables lang="fi">
+      <helpMenu>VALIKKO</helpMenu>
+      <helpSelect>VALITSE</helpSelect>
+      <aspectRatioLabel>Kuvasuhde</aspectRatioLabel>
+      <colorSchemeLabel>Väriteema</colorSchemeLabel>
+      <darkLabel>Tumma</darkLabel>
+      <lightLabel>Vaalea</lightLabel>
+      <helpBack>TAKAISIN</helpBack>
+      <libraryLabel>KIRJASTO</libraryLabel>
+      <favoritesLabel>SUOSIKIT</favoritesLabel>
+      <recentTabLabel>VIIMEISIMMÄT</recentTabLabel>
+      <playLabel>Pelaa</playLabel>
+      <lastPlayedLabel>VIIMEISIN ISTUNTO</lastPlayedLabel>
+      <playCountLabel>PELIKERRAT</playCountLabel>
+      <bannerLang>-fi</bannerLang>
+      <dateFormat>%d.%m.%Y</dateFormat>
+      <helpACircleX>0.6091</helpACircleX>
+      <helpATextX>0.6517</helpATextX>
+      <helpATextW>0.1180</helpATextW>
+      <helpBCircleX>0.8009</helpBCircleX>
+      <helpBTextX>0.8435</helpBTextX>
+      <helpBTextW>0.1409</helpBTextW>
+      <tabPillX>0.2194</tabPillX>
+      <tabPillW>0.1613</tabPillW>
+   </variables>
+</theme>

@@ -1,0 +1,32 @@
+<theme>
+   <formatVersion>7</formatVersion>
+   <variables>
+      <!-- Steam Deck palette (light) -->
+      <bgImage>./_inc/images/bg-light.png</bgImage>
+      <glPath>./_inc/systems/gl-light</glPath>
+      <glInfoPath>./_inc/systems/glinfo-light</glInfoPath>
+      <footerImage>./_inc/images/footer-light.png</footerImage>
+      <bgVeilImage>./_inc/images/bg-veil-light.png</bgVeilImage>
+      <bgColor>e9ebee</bgColor>
+      <textColor>1a1d23</textColor>
+      <textSoftColor>3a3f47</textSoftColor>
+      <textMutedColor>6b727b</textMutedColor>
+      <pillColor>2a2d33</pillColor>
+      <pillTextColor>ffffff</pillTextColor>
+      <tabActiveColor>c3c9d3</tabActiveColor>
+      <playColor>5ba32b</playColor>
+      <selectorColor>0000001c</selectorColor>
+      <boxColor>00000010</boxColor>
+      <separatorColor>00000024</separatorColor>
+      <slotColor>cdd2da</slotColor>
+      <slotSelectedColor>b9c0cb</slotSelectedColor>
+      <clockColor>ffffff</clockColor>
+      <menuBackgroundColor>F0F0F0F2</menuBackgroundColor>
+      <menuTextColor>000000AA</menuTextColor>
+      <menuTextSelectedColor>000000</menuTextSelectedColor>
+      <menuSeparatorColor>0000001A</menuSeparatorColor>
+      <menuSelectorColor>c3c9d3</menuSelectorColor>
+      <menuTextInputImage>./_inc/images/menu-textinput-light.png</menuTextInputImage>
+      <menuTextInputImageActive>./_inc/images/menu-textinput-light-active.png</menuTextInputImageActive>
+   </variables>
+</theme>

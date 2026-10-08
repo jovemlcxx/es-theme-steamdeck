@@ -1,0 +1,66 @@
+diff --git a/es-app/src/views/SystemView.cpp b/es-app/src/views/SystemView.cpp
+index 67a2332..01495fb 100644
+--- a/es-app/src/views/SystemView.cpp
++++ b/es-app/src/views/SystemView.cpp
+@@ -479,6 +479,7 @@ bool SystemView::input(InputConfig* config, Input input)
+ 		if(config->isMappedTo(BUTTON_OK, input))
+ 		{
+ 			stopScrolling();
++			Sound::getFromTheme(getSelected()->getTheme(), "system", "select")->play();
+ 			ViewController::get()->goToGameList(getSelected());
+ 			return true;
+ 		}
+diff --git a/es-app/src/views/gamelist/ISimpleGameListView.cpp b/es-app/src/views/gamelist/ISimpleGameListView.cpp
+index 36bf588..31cfd41 100644
+--- a/es-app/src/views/gamelist/ISimpleGameListView.cpp
++++ b/es-app/src/views/gamelist/ISimpleGameListView.cpp
+@@ -119,6 +119,7 @@ bool ISimpleGameListView::input(InputConfig* config, Input input)
+ 					// it's a folder
+ 					if (folder != nullptr && folder->getChildren().size() > 0)
+ 					{
++						Sound::getFromTheme(getTheme(), getName(), "select")->play();
+ 						mCursorStack.push(cursor);
+ 						populateList(folder->getChildrenListToDisplay());
+ 						FileData* cursor = getCursor();
+@@ -148,6 +149,7 @@ bool ISimpleGameListView::input(InputConfig* config, Input input)
+ 			} 
+ 			else if (!hideSystemView)
+ 			{
++				Sound::getFromTheme(getTheme(), getName(), "back")->play();
+ 				onFocusLost();
+ 				SystemData* systemToView = getCursor()->getSystem();
+ 
+@@ -165,6 +167,7 @@ bool ISimpleGameListView::input(InputConfig* config, Input input)
+ 		{
+ 			if(Settings::getInstance()->getBool("QuickSystemSelect"))
+ 			{
++				Sound::getFromTheme(getTheme(), getName(), "quicksysselect")->play();
+ 				onFocusLost();
+ 				ViewController::get()->goToNextGameList();
+ 				return true;
+@@ -174,6 +177,7 @@ bool ISimpleGameListView::input(InputConfig* config, Input input)
+ 		{
+ 			if(Settings::getInstance()->getBool("QuickSystemSelect"))
+ 			{
++				Sound::getFromTheme(getTheme(), getName(), "quicksysselect")->play();
+ 				onFocusLost();
+ 				ViewController::get()->goToPrevGameList();
+ 				return true;
+@@ -195,8 +199,17 @@ bool ISimpleGameListView::input(InputConfig* config, Input input)
+ 		else if (config->isMappedTo("y", input) && !UIModeController::getInstance()->isUIModeKid())
+ 		{
+ 			if (mRoot->getSystem()->isGameSystem() || mRoot->getSystem()->isGroupSystem())
++			{
++				// toggleGameInCollection can reload/recreate this view: take what the sound
++				// needs first and don't touch "this" afterwards
++				auto theme = getTheme();
++				std::string viewName = getName();
+ 				if (CollectionSystemManager::get()->toggleGameInCollection(getCursor()))
++				{
++					Sound::getFromTheme(theme, viewName, "favorite")->play();
+ 					return true;
++				}
++			}
+ 		}
+ 	}
+ 

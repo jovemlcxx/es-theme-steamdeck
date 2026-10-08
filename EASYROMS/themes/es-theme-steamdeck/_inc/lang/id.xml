@@ -1,0 +1,28 @@
+<theme>
+   <formatVersion>7</formatVersion>
+   <variables lang="id">
+      <helpMenu>MENU</helpMenu>
+      <helpSelect>PILIH</helpSelect>
+      <aspectRatioLabel>Rasio Aspek</aspectRatioLabel>
+      <colorSchemeLabel>Skema Warna</colorSchemeLabel>
+      <darkLabel>Gelap</darkLabel>
+      <lightLabel>Terang</lightLabel>
+      <helpBack>KEMBALI</helpBack>
+      <libraryLabel>PUSTAKA</libraryLabel>
+      <favoritesLabel>FAVORIT</favoritesLabel>
+      <recentTabLabel>TERBARU</recentTabLabel>
+      <playLabel>Main</playLabel>
+      <lastPlayedLabel>SESI TERAKHIR</lastPlayedLabel>
+      <playCountLabel>JUMLAH DIMAINKAN</playCountLabel>
+      <bannerLang>-id</bannerLang>
+      <dateFormat>%d/%m/%Y</dateFormat>
+      <helpACircleX>0.6530</helpACircleX>
+      <helpATextX>0.6955</helpATextX>
+      <helpATextW>0.0818</helpATextW>
+      <helpBCircleX>0.8086</helpBCircleX>
+      <helpBTextX>0.8511</helpBTextX>
+      <helpBTextW>0.1333</helpBTextW>
+      <tabPillX>0.2194</tabPillX>
+      <tabPillW>0.1613</tabPillW>
+   </variables>
+</theme>

@@ -1,0 +1,28 @@
+<theme>
+   <formatVersion>7</formatVersion>
+   <variables lang="no,nb">
+      <helpMenu>MENY</helpMenu>
+      <helpSelect>VELG</helpSelect>
+      <aspectRatioLabel>Bildeformat</aspectRatioLabel>
+      <colorSchemeLabel>Fargeskjema</colorSchemeLabel>
+      <darkLabel>Mørk</darkLabel>
+      <lightLabel>Lys</lightLabel>
+      <helpBack>TILBAKE</helpBack>
+      <libraryLabel>BIBLIOTEK</libraryLabel>
+      <favoritesLabel>FAVORITTER</favoritesLabel>
+      <recentTabLabel>NYLIGE</recentTabLabel>
+      <playLabel>Spill</playLabel>
+      <lastPlayedLabel>SISTE ØKT</lastPlayedLabel>
+      <playCountLabel>GANGER SPILT</playCountLabel>
+      <bannerLang>-no</bannerLang>
+      <dateFormat>%d.%m.%Y</dateFormat>
+      <helpACircleX>0.6682</helpACircleX>
+      <helpATextX>0.7107</helpATextX>
+      <helpATextW>0.0761</helpATextW>
+      <helpBCircleX>0.8181</helpBCircleX>
+      <helpBTextX>0.8606</helpBTextX>
+      <helpBTextW>0.1237</helpBTextW>
+      <tabPillX>0.2089</tabPillX>
+      <tabPillW>0.1822</tabPillW>
+   </variables>
+</theme>

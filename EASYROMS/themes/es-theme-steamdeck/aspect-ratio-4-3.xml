@@ -1,0 +1,306 @@
+<theme>
+   <formatVersion>7</formatVersion>
+   <!-- 640x480. Values are fractions of the screen. Geometry follows the Steam Deck UI references. -->
+   <view name="screen">
+      <batteryIndicator name="batteryIndicator">
+         <pos>0.0156 0.0166</pos>
+         <size>0.12 0.0583</size>
+      </batteryIndicator>
+      <text name="clock">
+         <pos>0.705 0.012</pos>
+         <size>0.22 0.05</size>
+         <fontSize>0.036</fontSize>
+      </text>
+   </view>
+
+   <!-- Bottom bar -->
+   <view name="system, basic, detailed">
+      <image name="e_top_search" extra="true">
+         <pos>0.7031 0.0250</pos>
+         <size>0.0297 0.0396</size>
+      </image>
+      <image name="e_top_bell" extra="true">
+         <pos>0.7484 0.0250</pos>
+         <size>0.0297 0.0396</size>
+      </image>
+      <image name="e_top_globe" extra="true">
+         <pos>0.7937 0.0250</pos>
+         <size>0.0297 0.0396</size>
+      </image>
+      <image name="e_top_bar" extra="true">
+         <pos>0.9844 0.0156</pos>
+         <size>0.0031 0.0583</size>
+      </image>
+      <image name="e_top_avatar" extra="true">
+         <pos>0.9375 0.0156</pos>
+         <size>0.04375 0.0583</size>
+      </image>
+      <image name="e_bar" extra="true">
+         <pos>0 0.93</pos>
+         <size>1 0.07</size>
+      </image>
+      <image name="e_help_steam_pill" extra="true">
+         <pos>0.019 0.9425</pos>
+         <size>0.115 0.047</size>
+      </image>
+      <text name="e_help_steam_text" extra="true">
+         <pos>0.019 0.9425</pos>
+         <size>0.115 0.047</size>
+         <fontSize>0.028</fontSize>
+      </text>
+      <text name="e_help_menu_text" extra="true">
+         <pos>0.148 0.9425</pos>
+         <size>0.14 0.047</size>
+         <fontSize>0.03</fontSize>
+      </text>
+      <!-- A / B prompts: positions per language (tools/help-layout.py), hugging the right edge like the Deck -->
+      <image name="e_help_a_circle" extra="true">
+         <pos>${helpACircleX} 0.9425</pos>
+         <size>0.0355 0.047</size>
+      </image>
+      <text name="e_help_a_letter" extra="true">
+         <pos>${helpACircleX} 0.9425</pos>
+         <size>0.0355 0.047</size>
+         <fontSize>0.028</fontSize>
+      </text>
+      <text name="e_help_a_text" extra="true">
+         <pos>${helpATextX} 0.9425</pos>
+         <size>${helpATextW} 0.047</size>
+         <fontSize>0.03</fontSize>
+      </text>
+      <image name="e_help_b_circle" extra="true">
+         <pos>${helpBCircleX} 0.9425</pos>
+         <size>0.0355 0.047</size>
+      </image>
+      <text name="e_help_b_letter" extra="true">
+         <pos>${helpBCircleX} 0.9425</pos>
+         <size>0.0355 0.047</size>
+         <fontSize>0.028</fontSize>
+      </text>
+      <text name="e_help_b_text" extra="true">
+         <pos>${helpBTextX} 0.9425</pos>
+         <size>${helpBTextW} 0.047</size>
+         <fontSize>0.03</fontSize>
+      </text>
+   </view>
+
+   <!-- SYSTEM VIEW -->
+   <view name="system">
+      <!-- Tile slots of 0.19 x 0.38 (122x182 px), selected first at x=0.075; the row starts at the screen edge (previous
+           tile peeks in the left margin) and runs past the right edge (last tile cut), with no fades, as on the Deck.
+           Step = size.x / maxLogoCount = 0.209 (gap ~12px). maxLogoCount 8: ES draws a window of count/2 items around the
+           selection (count = min(max, systems)); with 8+ systems the tile that pops in/out is off-screen (with fewer it
+           can be seen popping in at the right). Every capsule is the same 2:3 size here (a screenshot of the system's best-known game with its logo), so the slot is filled:
+           ES fits it in the slot, and logoAlignment bottom + logoPos y 0 stand them all on the slot's bottom edge. -->
+      <image name="e_bg_base" extra="true">
+         <pos>0 0</pos>
+         <size>1 1</size>
+      </image>
+      <image name="e_bg_art" extra="true">
+         <pos>0.5 0.5</pos>
+         <origin>0.5 0.5</origin>
+         <minSize>1 1</minSize>
+      </image>
+      <image name="e_bg_veil" extra="true">
+         <pos>0 0</pos>
+         <size>1 1</size>
+      </image>
+      <image name="e_top_scrim" extra="true">
+         <pos>0 0</pos>
+         <size>1 0.1167</size>
+      </image>
+      <carousel name="systemcarousel">
+         <pos>0 0.11</pos>
+         <size>1.672 0.38</size>
+         <logoSize>0.19 0.38</logoSize>
+         <logoPos>0.075 0</logoPos>
+         <logoAlignment>bottom</logoAlignment>
+         <maxLogoCount>8</maxLogoCount>
+         <origin>0 0</origin>
+      </carousel>
+      <!-- name and info aligned with the selected cover, as on the Deck -->
+      <text name="e_system_name" extra="true">
+         <pos>0.07 0.515</pos>
+         <size>0.5 0.05</size>
+         <origin>0 0</origin>
+         <fontSize>0.035</fontSize>
+      </text>
+      <image name="e_info_play" extra="true">
+         <pos>0.0703 0.5729</pos>
+         <size>0.0172 0.0229</size>
+      </image>
+      <text name="systemInfo">
+         <pos>0.095 0.565</pos>
+         <size>0.5 0.035</size>
+         <origin>0 0</origin>
+         <fontSize>0.022</fontSize>
+      </text>
+      <!-- pill sized to the label of each language (tools/help-layout.py), centred on the first tab -->
+      <image name="e_tab1_pill" extra="true">
+         <pos>${tabPillX} 0.615</pos>
+         <size>${tabPillW} 0.07</size>
+      </image>
+      <text name="e_tab1" extra="true">
+         <pos>0.20 0.615</pos>
+         <size>0.20 0.07</size>
+         <fontSize>0.028</fontSize>
+      </text>
+      <text name="e_tab2" extra="true">
+         <pos>0.40 0.615</pos>
+         <size>0.20 0.07</size>
+         <fontSize>0.028</fontSize>
+      </text>
+      <text name="e_tab3" extra="true">
+         <pos>0.60 0.615</pos>
+         <size>0.20 0.07</size>
+         <fontSize>0.028</fontSize>
+      </text>
+      <image name="e_banner_bg" extra="true">
+         <pos>0.03 0.715</pos>
+         <size>0.94 0.285</size>
+      </image>
+      <image name="e_banner_default" extra="true">
+         <pos>0.5 0.8575</pos>
+         <maxSize>0.94 0.285</maxSize>
+         <origin>0.5 0.5</origin>
+      </image>
+      <image name="e_bar_blur_default" extra="true">
+         <pos>0 0.93</pos>
+         <size>1 0.07</size>
+      </image>
+      <image name="e_bar_blur" extra="true">
+         <pos>0 0.93</pos>
+         <maxSize>1 0.07</maxSize>
+      </image>
+      <image name="e_system_banner" extra="true">
+         <pos>0.5 0.8575</pos>
+         <maxSize>0.94 0.285</maxSize>
+         <origin>0.5 0.5</origin>
+      </image>
+   </view>
+
+   <!-- GAMELIST (640x480 px in the comments): hero 0-196, action row 206-240, separator 256,
+        list box + name/description 270-440 (7 rows of 23.8 px), footer from 446 -->
+   <view name="basic, detailed">
+      <image name="e_bg" extra="true">
+         <pos>0 0</pos>
+         <size>1 1</size>
+      </image>
+      <image name="e_gl" extra="true">
+         <pos>0 0</pos>
+         <size>1 1</size>
+      </image>
+      <image name="e_image_bg" extra="true">
+         <pos>0 0</pos>
+         <size>1 0.4083</size>
+      </image>
+      <image name="md_image">
+         <pos>0.5 0.2042</pos>
+         <minSize>1 0.4083</minSize>
+      </image>
+      <!-- the page below the hero (crop x 0, y 196 of the game-list background) -->
+      <image name="e_info_bg" extra="true">
+         <pos>0 0.4083</pos>
+         <size>1 0.5917</size>
+      </image>
+      <image name="md_marquee">
+         <pos>0.5 0.2083</pos>
+         <maxSize>0.5 0.22</maxSize>
+      </image>
+      <image name="e_top_scrim" extra="true">
+         <pos>0 0</pos>
+         <size>1 0.1167</size>
+      </image>
+
+      <!-- action row: y 206-240 -->
+      <image name="e_play_button" extra="true">
+         <pos>0.025 0.4292</pos>
+         <size>0.2125 0.0708</size>
+      </image>
+      <image name="e_play_icon" extra="true">
+         <pos>0.045 0.4458</pos>
+         <size>0.028 0.0375</size>
+      </image>
+      <text name="e_play_text" extra="true">
+         <pos>0.085 0.4292</pos>
+         <size>0.14 0.0708</size>
+         <fontSize>0.033</fontSize>
+      </text>
+      <text name="md_lbl_lastplayed">
+         <pos>0.2625 0.4250</pos>
+         <size>0.19 0.035</size>
+         <fontSize>0.021</fontSize>
+      </text>
+      <datetime name="md_lastplayed">
+         <pos>0.2625 0.4583</pos>
+         <size>0.19 0.045</size>
+         <fontSize>0.03</fontSize>
+      </datetime>
+      <text name="md_lbl_playcount">
+         <pos>0.4625 0.4250</pos>
+         <size>0.19 0.035</size>
+         <fontSize>0.021</fontSize>
+      </text>
+      <text name="md_playcount">
+         <pos>0.4625 0.4583</pos>
+         <size>0.19 0.045</size>
+         <fontSize>0.03</fontSize>
+      </text>
+      <image name="e_btn_pad" extra="true">
+         <pos>0.8563 0.4292</pos>
+         <size>0.0531 0.0708</size>
+      </image>
+      <image name="e_btn_pad_icon" extra="true">
+         <pos>0.8656 0.4417</pos>
+         <size>0.0344 0.0458</size>
+      </image>
+      <image name="e_btn_gear" extra="true">
+         <pos>0.9219 0.4292</pos>
+         <size>0.0531 0.0708</size>
+      </image>
+      <image name="e_btn_gear_icon" extra="true">
+         <pos>0.9313 0.4417</pos>
+         <size>0.0344 0.0458</size>
+      </image>
+
+      <!-- separator: lines at y 256 with a gap in the middle for the system name -->
+      <image name="e_sep_l" extra="true">
+         <pos>0.0156 0.5333</pos>
+         <size>0.3281 0.0021</size>
+      </image>
+      <image name="e_sep_r" extra="true">
+         <pos>0.6563 0.5333</pos>
+         <size>0.3281 0.0021</size>
+      </image>
+      <text name="logoText">
+         <pos>0.35 0.5146</pos>
+         <size>0.30 0.04</size>
+         <fontSize>0.024</fontSize>
+      </text>
+
+      <!-- list box: x 16-276, y 270-440; the list fills it so the selected row is a bar across the box -->
+      <image name="e_list_box" extra="true">
+         <pos>0.025 0.5625</pos>
+         <size>0.4063 0.3542</size>
+      </image>
+      <textlist name="gamelist">
+         <pos>0.025 0.5667</pos>
+         <size>0.4063 0.3471</size>
+         <horizontalMargin>0.0188</horizontalMargin>
+         <fontSize>0.026</fontSize>
+         <lineSpacing>1.4</lineSpacing>
+         <selectorHeight>0.0496</selectorHeight>
+         <selectorOffsetY>0</selectorOffsetY>
+      </textlist>
+      <text name="md_name">
+         <pos>0.4563 0.5625</pos>
+         <size>0.5187 0.05</size>
+         <fontSize>0.036</fontSize>
+      </text>
+      <text name="md_description">
+         <pos>0.4563 0.6333</pos>
+         <size>0.5187 0.2833</size>
+         <fontSize>0.025</fontSize>
+      </text>
+   </view>
+</theme>

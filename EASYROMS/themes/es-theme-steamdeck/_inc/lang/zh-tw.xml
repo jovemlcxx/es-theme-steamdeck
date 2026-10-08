@@ -1,0 +1,28 @@
+<theme>
+   <formatVersion>7</formatVersion>
+   <variables lang="zh-tw">
+      <helpMenu>菜單</helpMenu>
+      <helpSelect>選擇</helpSelect>
+      <aspectRatioLabel>螢幕比例</aspectRatioLabel>
+      <colorSchemeLabel>配色方案</colorSchemeLabel>
+      <darkLabel>深色</darkLabel>
+      <lightLabel>淺色</lightLabel>
+      <helpBack>返回</helpBack>
+      <libraryLabel>收藏庫</libraryLabel>
+      <favoritesLabel>我的最愛</favoritesLabel>
+      <recentTabLabel>最近</recentTabLabel>
+      <playLabel>開始遊戲</playLabel>
+      <lastPlayedLabel>上次遊玩</lastPlayedLabel>
+      <playCountLabel>遊玩次數</playCountLabel>
+      <bannerLang>-zh-tw</bannerLang>
+      <dateFormat>%Y/%m/%d</dateFormat>
+      <helpACircleX>0.7426</helpACircleX>
+      <helpATextX>0.7851</helpATextX>
+      <helpATextW>0.0628</helpATextW>
+      <helpBCircleX>0.8791</helpBCircleX>
+      <helpBTextX>0.9216</helpBTextX>
+      <helpBTextW>0.0628</helpBTextW>
+      <tabPillX>0.2394</tabPillX>
+      <tabPillW>0.1212</tabPillW>
+   </variables>
+</theme>

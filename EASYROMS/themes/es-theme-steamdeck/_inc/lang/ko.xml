@@ -1,0 +1,28 @@
+<theme>
+   <formatVersion>7</formatVersion>
+   <variables lang="ko">
+      <helpMenu>메뉴</helpMenu>
+      <helpSelect>선택</helpSelect>
+      <aspectRatioLabel>화면 비율</aspectRatioLabel>
+      <colorSchemeLabel>색상 테마</colorSchemeLabel>
+      <darkLabel>어두운</darkLabel>
+      <lightLabel>밝은</lightLabel>
+      <helpBack>뒤로</helpBack>
+      <libraryLabel>라이브러리</libraryLabel>
+      <favoritesLabel>즐겨찾기</favoritesLabel>
+      <recentTabLabel>최근</recentTabLabel>
+      <playLabel>플레이</playLabel>
+      <lastPlayedLabel>마지막 세션</lastPlayedLabel>
+      <playCountLabel>플레이 횟수</playCountLabel>
+      <bannerLang>-ko</bannerLang>
+      <dateFormat>%Y.%m.%d.</dateFormat>
+      <helpACircleX>0.7521</helpACircleX>
+      <helpATextX>0.7946</helpATextX>
+      <helpATextW>0.0570</helpATextW>
+      <helpBCircleX>0.8829</helpBCircleX>
+      <helpBTextX>0.9254</helpBTextX>
+      <helpBTextW>0.0589</helpBTextW>
+      <tabPillX>0.2213</tabPillX>
+      <tabPillW>0.1574</tabPillW>
+   </variables>
+</theme>

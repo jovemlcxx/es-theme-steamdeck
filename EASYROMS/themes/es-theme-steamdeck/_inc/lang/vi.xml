@@ -1,0 +1,28 @@
+<theme>
+   <formatVersion>7</formatVersion>
+   <variables lang="vi">
+      <helpMenu>MENU</helpMenu>
+      <helpSelect>CHỌN</helpSelect>
+      <aspectRatioLabel>Tỷ lệ khung hình</aspectRatioLabel>
+      <colorSchemeLabel>Giao diện màu</colorSchemeLabel>
+      <darkLabel>Tối</darkLabel>
+      <lightLabel>Sáng</lightLabel>
+      <helpBack>QUAY LẠI</helpBack>
+      <libraryLabel>THƯ VIỆN</libraryLabel>
+      <favoritesLabel>YÊU THÍCH</favoritesLabel>
+      <recentTabLabel>GẦN ĐÂY</recentTabLabel>
+      <playLabel>Chơi</playLabel>
+      <lastPlayedLabel>PHIÊN GẦN NHẤT</lastPlayedLabel>
+      <playCountLabel>SỐ LẦN CHƠI</playCountLabel>
+      <bannerLang>-vi</bannerLang>
+      <dateFormat>%d/%m/%Y</dateFormat>
+      <helpACircleX>0.6377</helpACircleX>
+      <helpATextX>0.6803</helpATextX>
+      <helpATextW>0.0894</helpATextW>
+      <helpBCircleX>0.8009</helpBCircleX>
+      <helpBTextX>0.8435</helpBTextX>
+      <helpBTextW>0.1409</helpBTextW>
+      <tabPillX>0.2137</tabPillX>
+      <tabPillW>0.1727</tabPillW>
+   </variables>
+</theme>

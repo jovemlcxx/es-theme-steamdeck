@@ -1,0 +1,28 @@
+<theme>
+   <formatVersion>7</formatVersion>
+   <variables lang="es">
+      <helpMenu>MENÚ</helpMenu>
+      <helpSelect>SELECCIONAR</helpSelect>
+      <aspectRatioLabel>Relación de Aspecto</aspectRatioLabel>
+      <colorSchemeLabel>Esquema de Color</colorSchemeLabel>
+      <darkLabel>Oscuro</darkLabel>
+      <lightLabel>Claro</lightLabel>
+      <helpBack>VOLVER</helpBack>
+      <libraryLabel>BIBLIOTECA</libraryLabel>
+      <favoritesLabel>FAVORITOS</favoritesLabel>
+      <recentTabLabel>RECIENTES</recentTabLabel>
+      <playLabel>Jugar</playLabel>
+      <lastPlayedLabel>ÚLTIMA SESIÓN</lastPlayedLabel>
+      <playCountLabel>VECES JUGADO</playCountLabel>
+      <bannerLang>-es</bannerLang>
+      <dateFormat>%d/%m/%Y</dateFormat>
+      <helpACircleX>0.5557</helpACircleX>
+      <helpATextX>0.5983</helpATextX>
+      <helpATextW>0.1981</helpATextW>
+      <helpBCircleX>0.8276</helpBCircleX>
+      <helpBTextX>0.8702</helpBTextX>
+      <helpBTextW>0.1142</helpBTextW>
+      <tabPillX>0.1994</tabPillX>
+      <tabPillW>0.2013</tabPillW>
+   </variables>
+</theme>

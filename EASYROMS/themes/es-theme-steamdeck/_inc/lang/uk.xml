@@ -1,0 +1,28 @@
+<theme>
+   <formatVersion>7</formatVersion>
+   <variables lang="uk,ua">
+      <helpMenu>МЕНЮ</helpMenu>
+      <helpSelect>ВИБРАТИ</helpSelect>
+      <aspectRatioLabel>Співвідношення сторін</aspectRatioLabel>
+      <colorSchemeLabel>Колірна схема</colorSchemeLabel>
+      <darkLabel>Темна</darkLabel>
+      <lightLabel>Світла</lightLabel>
+      <helpBack>НАЗАД</helpBack>
+      <libraryLabel>БІБЛІОТЕКА</libraryLabel>
+      <favoritesLabel>ОБРАНЕ</favoritesLabel>
+      <recentTabLabel>НЕЩОДАВНІ</recentTabLabel>
+      <playLabel>Грати</playLabel>
+      <lastPlayedLabel>ОСТАННІЙ СЕАНС</lastPlayedLabel>
+      <playCountLabel>ЗАПУСКІВ</playCountLabel>
+      <bannerLang>-uk</bannerLang>
+      <dateFormat>%d.%m.%Y</dateFormat>
+      <helpACircleX>0.6244</helpACircleX>
+      <helpATextX>0.6669</helpATextX>
+      <helpATextW>0.1371</helpATextW>
+      <helpBCircleX>0.8352</helpBCircleX>
+      <helpBTextX>0.8778</helpBTextX>
+      <helpBTextW>0.1066</helpBTextW>
+      <tabPillX>0.2003</tabPillX>
+      <tabPillW>0.1994</tabPillW>
+   </variables>
+</theme>

@@ -1,0 +1,28 @@
+<theme>
+   <formatVersion>7</formatVersion>
+   <variables lang="ru">
+      <helpMenu>МЕНЮ</helpMenu>
+      <helpSelect>ВЫБРАТЬ</helpSelect>
+      <aspectRatioLabel>Соотношение сторон</aspectRatioLabel>
+      <colorSchemeLabel>Цветовая схема</colorSchemeLabel>
+      <darkLabel>Тёмная</darkLabel>
+      <lightLabel>Светлая</lightLabel>
+      <helpBack>НАЗАД</helpBack>
+      <libraryLabel>БИБЛИОТЕКА</libraryLabel>
+      <favoritesLabel>ИЗБРАННОЕ</favoritesLabel>
+      <recentTabLabel>НЕДАВНИЕ</recentTabLabel>
+      <playLabel>Играть</playLabel>
+      <lastPlayedLabel>ПОСЛЕДНИЙ СЕАНС</lastPlayedLabel>
+      <playCountLabel>ЗАПУСКОВ</playCountLabel>
+      <bannerLang>-ru</bannerLang>
+      <dateFormat>%d.%m.%Y</dateFormat>
+      <helpACircleX>0.6244</helpACircleX>
+      <helpATextX>0.6669</helpATextX>
+      <helpATextW>0.1371</helpATextW>
+      <helpBCircleX>0.8352</helpBCircleX>
+      <helpBTextX>0.8778</helpBTextX>
+      <helpBTextW>0.1066</helpBTextW>
+      <tabPillX>0.1870</tabPillX>
+      <tabPillW>0.2261</tabPillW>
+   </variables>
+</theme>

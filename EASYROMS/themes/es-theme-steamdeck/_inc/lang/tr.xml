@@ -1,0 +1,28 @@
+<theme>
+   <formatVersion>7</formatVersion>
+   <variables lang="tr">
+      <helpMenu>MENÜ</helpMenu>
+      <helpSelect>SEÇ</helpSelect>
+      <aspectRatioLabel>En Boy Oranı</aspectRatioLabel>
+      <colorSchemeLabel>Renk Şeması</colorSchemeLabel>
+      <darkLabel>Koyu</darkLabel>
+      <lightLabel>Açık</lightLabel>
+      <helpBack>GERİ</helpBack>
+      <libraryLabel>KÜTÜPHANE</libraryLabel>
+      <favoritesLabel>FAVORİLER</favoritesLabel>
+      <recentTabLabel>SON OYNANAN</recentTabLabel>
+      <playLabel>Oyna</playLabel>
+      <lastPlayedLabel>SON OTURUM</lastPlayedLabel>
+      <playCountLabel>OYNANMA SAYISI</playCountLabel>
+      <bannerLang>-tr</bannerLang>
+      <dateFormat>%d.%m.%Y</dateFormat>
+      <helpACircleX>0.7387</helpACircleX>
+      <helpATextX>0.7813</helpATextX>
+      <helpATextW>0.0570</helpATextW>
+      <helpBCircleX>0.8696</helpBCircleX>
+      <helpBTextX>0.9121</helpBTextX>
+      <helpBTextW>0.0723</helpBTextW>
+      <tabPillX>0.1994</tabPillX>
+      <tabPillW>0.2013</tabPillW>
+   </variables>
+</theme>

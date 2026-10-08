@@ -1,0 +1,28 @@
+<theme>
+   <formatVersion>7</formatVersion>
+   <variables lang="hu">
+      <helpMenu>MENÜ</helpMenu>
+      <helpSelect>KIVÁLASZT</helpSelect>
+      <aspectRatioLabel>Képarány</aspectRatioLabel>
+      <colorSchemeLabel>Színséma</colorSchemeLabel>
+      <darkLabel>Sötét</darkLabel>
+      <lightLabel>Világos</lightLabel>
+      <helpBack>VISSZA</helpBack>
+      <libraryLabel>KÖNYVTÁR</libraryLabel>
+      <favoritesLabel>KEDVENCEK</favoritesLabel>
+      <recentTabLabel>LEGUTÓBBIAK</recentTabLabel>
+      <playLabel>Játék</playLabel>
+      <lastPlayedLabel>UTOLSÓ MUNKAMENET</lastPlayedLabel>
+      <playCountLabel>INDÍTÁSOK SZÁMA</playCountLabel>
+      <bannerLang>-hu</bannerLang>
+      <dateFormat>%Y.%m.%d.</dateFormat>
+      <helpACircleX>0.6091</helpACircleX>
+      <helpATextX>0.6517</helpATextX>
+      <helpATextW>0.1562</helpATextW>
+      <helpBCircleX>0.8391</helpBCircleX>
+      <helpBTextX>0.8816</helpBTextX>
+      <helpBTextW>0.1028</helpBTextW>
+      <tabPillX>0.2070</tabPillX>
+      <tabPillW>0.1860</tabPillW>
+   </variables>
+</theme>

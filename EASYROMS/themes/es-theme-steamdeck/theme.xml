@@ -1,0 +1,570 @@
+<theme defaultView="detailed">
+   <formatVersion>7</formatVersion>
+   <variables>
+      <fontRegular>./_inc/fonts/NotoSans-Regular.ttf</fontRegular>
+      <fontBold>./_inc/fonts/NotoSans-Bold.ttf</fontBold>
+      <capsulePath>./_inc/systems/capsule</capsulePath>
+      <bannerPath>./_inc/systems/banner</bannerPath>
+      <pillImage>./_inc/images/pill.svg</pillImage>
+      <circleImage>./_inc/images/circle.svg</circleImage>
+      <spacerImage>./_inc/images/white.png</spacerImage>
+      <bgImage>./_inc/images/bg.png</bgImage>
+      <bgVeilImage>./_inc/images/bg-veil.png</bgVeilImage>
+      <footerImage>./_inc/images/footer.png</footerImage>
+      <glPath>./_inc/systems/gl</glPath>
+      <glInfoPath>./_inc/systems/glinfo</glInfoPath>
+      <playImage>./_inc/images/play.svg</playImage>
+      <barBlurPath>./_inc/systems/barblur</barBlurPath>
+      <helpMenu>MENU</helpMenu>
+      <helpSelect>SELECT</helpSelect>
+      <helpBack>BACK</helpBack>
+      <libraryLabel>LIBRARY</libraryLabel>
+      <favoritesLabel>FAVORITES</favoritesLabel>
+      <recentTabLabel>RECENT</recentTabLabel>
+      <playLabel>Play</playLabel>
+      <lastPlayedLabel>LAST SESSION</lastPlayedLabel>
+      <playCountLabel>TIMES PLAYED</playCountLabel>
+      <aspectRatioLabel>Aspect Ratio</aspectRatioLabel>
+      <colorSchemeLabel>Color Scheme</colorSchemeLabel>
+      <darkLabel>Dark</darkLabel>
+      <lightLabel>Light</lightLabel>
+      <bannerLang></bannerLang>
+      <dateFormat>%m/%d/%Y</dateFormat>
+      <!-- Defaults = dark palette. _inc/colors/dark.xml and light.xml override these. -->
+      <slotColor>2a303c</slotColor>
+      <slotSelectedColor>3d4656</slotSelectedColor>
+      <clockColor>ffffff</clockColor>
+      <accentColor>1a9fff</accentColor>
+      <bgColor>1b1d21</bgColor>
+      <textColor>ffffff</textColor>
+      <textSoftColor>c5c7cb</textSoftColor>
+      <textMutedColor>8b929a</textMutedColor>
+      <pillColor>e4e4e7</pillColor>
+      <pillTextColor>111318</pillTextColor>
+      <tabActiveColor>3d4450</tabActiveColor>
+      <playColor>5ba32b</playColor>
+      <selectorColor>ffffff1f</selectorColor>
+      <boxColor>ffffff12</boxColor>
+      <separatorColor>ffffff24</separatorColor>
+      <menuBackgroundColor>16191fF2</menuBackgroundColor>
+      <menuTextColor>ffffffAA</menuTextColor>
+      <menuTextSelectedColor>ffffff</menuTextSelectedColor>
+      <menuSeparatorColor>ffffff1A</menuSeparatorColor>
+      <menuSelectorColor>3d4450</menuSelectorColor>
+      <menuTextInputImage>./_inc/images/menu-textinput-dark.png</menuTextInputImage>
+      <menuTextInputImageActive>./_inc/images/menu-textinput-dark-active.png</menuTextInputImageActive>
+      <helpACircleX>0.6816</helpACircleX>
+      <helpATextX>0.7241</helpATextX>
+      <helpATextW>0.1047</helpATextW>
+      <helpBCircleX>0.8600</helpBCircleX>
+      <helpBTextX>0.9026</helpBTextX>
+      <helpBTextW>0.0818</helpBTextW>
+      <tabPillX>0.2222</tabPillX>
+      <tabPillW>0.1555</tabPillW>
+   </variables>
+   <!-- Translations: one file per language, included only for that language. (ES fcamod stops reading <variables>
+        blocks at the first one whose lang does not match, so they cannot all live in this file.) -->
+   <include lang="pt,br">./_inc/lang/br.xml</include>
+   <include lang="es">./_inc/lang/es.xml</include>
+   <include lang="fr">./_inc/lang/fr.xml</include>
+   <include lang="de">./_inc/lang/de.xml</include>
+   <include lang="it">./_inc/lang/it.xml</include>
+   <include lang="ja">./_inc/lang/ja.xml</include>
+   <include lang="ko">./_inc/lang/ko.xml</include>
+   <include lang="ru">./_inc/lang/ru.xml</include>
+   <include lang="zh-cn,zh">./_inc/lang/zh-cn.xml</include>
+   <include lang="zh-tw">./_inc/lang/zh-tw.xml</include>
+   <include lang="tr">./_inc/lang/tr.xml</include>
+   <include lang="nl">./_inc/lang/nl.xml</include>
+   <include lang="sv">./_inc/lang/sv.xml</include>
+   <include lang="pl">./_inc/lang/pl.xml</include>
+   <include lang="ca">./_inc/lang/ca.xml</include>
+   <include lang="da">./_inc/lang/da.xml</include>
+   <include lang="fi">./_inc/lang/fi.xml</include>
+   <include lang="hu">./_inc/lang/hu.xml</include>
+   <include lang="no,nb">./_inc/lang/no.xml</include>
+   <include lang="ro">./_inc/lang/ro.xml</include>
+   <include lang="uk,ua">./_inc/lang/uk.xml</include>
+   <include lang="cs">./_inc/lang/cs.xml</include>
+   <include lang="el">./_inc/lang/el.xml</include>
+   <include lang="vi">./_inc/lang/vi.xml</include>
+   <include lang="pt">./_inc/lang/pt.xml</include>
+   <include lang="id">./_inc/lang/id.xml</include>
+
+   <subset name="aspect-ratio" displayName="${aspectRatioLabel}">
+      <include name="4-3" displayName="4:3" />
+   </subset>
+   <subset name="color-scheme" displayName="${colorSchemeLabel}">
+      <include name="dark" displayName="${darkLabel}">./_inc/colors/dark.xml</include>
+      <include name="light" displayName="${lightLabel}">./_inc/colors/light.xml</include>
+   </subset>
+
+   <!-- Every view: native help hidden (drawn by the aspect-ratio file) -->
+   <view name="system, basic, detailed, menu">
+      <helpsystem name="help">
+         <textColor>00000000</textColor>
+         <iconColor>00000000</iconColor>
+      </helpsystem>
+   </view>
+
+   <view name="menu">
+      <menuText name="menutitle">
+         <fontPath>${fontBold}</fontPath>
+         <fontSize>0.03</fontSize>
+         <color>${menuTextSelectedColor}</color>
+      </menuText>
+      <menuText name="menufooter">
+         <fontPath>${fontRegular}</fontPath>
+         <fontSize>0.02</fontSize>
+         <color>${menuTextColor}</color>
+      </menuText>
+      <menuText name="menutext">
+         <fontPath>${fontBold}</fontPath>
+         <fontSize>0.03</fontSize>
+         <color>${menuTextColor}</color>
+         <separatorColor>${menuSeparatorColor}</separatorColor>
+         <selectedColor>${menuTextSelectedColor}</selectedColor>
+         <!-- the focused row / keyboard key: Steam Deck focus grey, so the selected (white / black) text reads -->
+         <selectorColor>${menuSelectorColor}</selectorColor>
+      </menuText>
+      <menuTextSmall name="menutextsmall">
+         <fontPath>${fontRegular}</fontPath>
+         <fontSize>0.02</fontSize>
+         <color>${menuTextColor}</color>
+      </menuTextSmall>
+      <menuGroup name="menugroup">
+         <fontPath>${fontBold}</fontPath>
+         <fontSize>0.025</fontSize>
+         <color>${menuTextColor}</color>
+         <separatorColor>${menuSeparatorColor}</separatorColor>
+         <backgroundColor>00000000</backgroundColor>
+      </menuGroup>
+      <menuBackground name="menubg">
+         <color>${menuBackgroundColor}</color>
+      </menuBackground>
+      <!-- text fields (search, Wi-Fi password...): ES's default box is white, so the typed text vanished in dark -->
+      <menuTextEdit name="menutextedit">
+         <inactive>${menuTextInputImage}</inactive>
+         <active>${menuTextInputImageActive}</active>
+      </menuTextEdit>
+   </view>
+
+   <view name="screen">
+      <batteryIndicator name="batteryIndicator">
+         <color>${clockColor}</color>
+      </batteryIndicator>
+      <text name="clock">
+         <fontPath>${fontBold}</fontPath>
+         <color>${clockColor}</color>
+         <alignment>right</alignment>
+         <zIndex>100</zIndex>
+      </text>
+   </view>
+
+   <!-- ===== SYSTEM VIEW (reference: "Jogos recentes" screen) ===== -->
+   <!-- Sounds: the Steam Deck UI sounds. Moving through the carousel and the lists is the scrollSound of the carousel and
+        the textlist (the same navigation sound); launch is a sound element; select / back / favorite / quicksysselect are played only by ES
+        builds with the sounds patch (es-fcamod-sounds) and ignored by the others. -->
+   <view name="system, basic, detailed">
+      <sound name="select"><path>./_inc/sounds/select.wav</path></sound>
+      <sound name="back"><path>./_inc/sounds/back.wav</path></sound>
+      <sound name="launch"><path>./_inc/sounds/launch.wav</path></sound>
+      <sound name="favorite"><path>./_inc/sounds/favorite.wav</path></sound>
+      <sound name="quicksysselect"><path>./_inc/sounds/quicksysselect.wav</path></sound>
+   </view>
+
+   <view name="system">
+      <!-- No staticBackground: ES draws it AFTER all extras below the carousel, which would hide the per-system art.
+           The page gradient is a low-z extra instead (same file for every system, so it never fades). -->
+      <image name="e_bg_base" extra="true">
+         <path>${bgImage}</path>
+         <zIndex>5</zIndex>
+      </image>
+      <!-- The selected system's own capsule, scaled to cover the screen, under one shared veil that dims it behind the
+           row and fades it into the page colour (tools/gen-capsules.py overlays()).
+           Extras follow the carousel's transition, so it cross-fades between systems. -->
+      <image name="e_bg_art" extra="true">
+         <path>${capsulePath}/${system.theme}.png</path>
+         <linearSmooth>true</linearSmooth>
+         <zIndex>35</zIndex>
+      </image>
+      <image name="e_bg_veil" extra="true">
+         <path>${bgVeilImage}</path>
+         <zIndex>36</zIndex>
+      </image>
+      <!-- the same soft dark fade at the top as on the game list, so the battery, clock and icons stay readable -->
+      <image name="e_top_scrim" extra="true">
+         <path>./_inc/images/scrim.png</path>
+         <zIndex>37</zIndex>
+      </image>
+      <!-- All covers share one portrait size (no zoom, so nothing moves while scrolling); the selected one is fully
+           opaque (ES draws the others at 50%) and anchored at the left. -->
+      <carousel name="systemcarousel">
+         <type>horizontal</type>
+         <scrollSound>./_inc/sounds/browse.wav</scrollSound>
+         <!-- Opacity of the systems that are not selected (stock 0.5). Batocera, Knulli, EmuELEC and ArchR (ES-next family)
+              read minLogoOpacity natively; the fcamod ES (ArkOS, dArkOS, arkos4clone) hard-codes 0.5 and only honours
+              unselectedOpacity with the "Steam Deck UI Fixes" build (es-fcamod-sounds). Each ES ignores the other. -->
+         <minLogoOpacity>1</minLogoOpacity>
+         <unselectedOpacity>1</unselectedOpacity>
+         <logoAlignment>center</logoAlignment>
+         <zIndex>40</zIndex>
+         <color>00000000</color>
+         <maxLogoCount>8</maxLogoCount>
+         <logoScale>1.0</logoScale>
+         <defaultTransition>fade</defaultTransition>
+      </carousel>
+      <image name="logo">
+         <path>${capsulePath}/${system.theme}.png</path>
+      </image>
+      <text name="logoText">
+         <fontPath>${fontBold}</fontPath>
+         <fontSize>0.04</fontSize>
+         <color>${textColor}</color>
+         <forceUppercase>true</forceUppercase>
+      </text>
+      <text name="e_system_name" extra="true">
+         <text>${system.fullName}</text>
+         <fontPath>${fontBold}</fontPath>
+         <color>${textColor}</color>
+         <alignment>left</alignment>
+         <verticalAlignment>center</verticalAlignment>
+         <zIndex>50</zIndex>
+      </text>
+      <!-- Green play triangle before the game count, as the Deck's "PLAY TIME" line -->
+      <image name="e_info_play" extra="true">
+         <path>./_inc/images/icon-play-small.svg</path>
+         <color>${playColor}</color>
+         <zIndex>50</zIndex>
+      </image>
+      <text name="systemInfo">
+         <fontPath>${fontBold}</fontPath>
+         <color>${textMutedColor}</color>
+         <alignment>left</alignment>
+         <verticalAlignment>center</verticalAlignment>
+         <forceUppercase>true</forceUppercase>
+         <zIndex>50</zIndex>
+      </text>
+      <image name="e_tab1_pill" extra="true">
+         <path>${pillImage}</path>
+         <color>${tabActiveColor}</color>
+         <zIndex>45</zIndex>
+      </image>
+      <text name="e_tab1" extra="true">
+         <text>${libraryLabel}</text>
+         <fontPath>${fontBold}</fontPath>
+         <color>${textColor}</color>
+         <alignment>center</alignment>
+         <verticalAlignment>center</verticalAlignment>
+         <zIndex>50</zIndex>
+      </text>
+      <text name="e_tab2" extra="true">
+         <text>${favoritesLabel}</text>
+         <fontPath>${fontBold}</fontPath>
+         <color>${textSoftColor}</color>
+         <alignment>center</alignment>
+         <verticalAlignment>center</verticalAlignment>
+         <zIndex>50</zIndex>
+      </text>
+      <text name="e_tab3" extra="true">
+         <text>${recentTabLabel}</text>
+         <fontPath>${fontBold}</fontPath>
+         <color>${textSoftColor}</color>
+         <alignment>center</alignment>
+         <verticalAlignment>center</verticalAlignment>
+         <zIndex>50</zIndex>
+      </text>
+      <image name="e_banner_bg" extra="true">
+         <path>${spacerImage}</path>
+         <color>${slotColor}</color>
+         <zIndex>43</zIndex>
+      </image>
+      <image name="e_banner_default" extra="true">
+         <path>./_inc/images/banner-portmaster${bannerLang}.png</path>
+         <zIndex>45</zIndex>
+      </image>
+      <image name="e_system_banner" extra="true">
+         <path>${bannerPath}/${system.theme}.png</path>
+         <zIndex>46</zIndex>
+      </image>
+      <!-- Footer "blur": pre-blurred strip of the banner (see tools/gen-bar-blur.sh); the translucent bar goes on top -->
+      <image name="e_bar_blur_default" extra="true">
+         <path>./_inc/images/bar-blur-portmaster${bannerLang}.png</path>
+         <zIndex>84</zIndex>
+      </image>
+      <image name="e_bar_blur" extra="true">
+         <path>${barBlurPath}/${system.theme}.png</path>
+         <zIndex>84</zIndex>
+      </image>
+   </view>
+
+   <!-- ===== GAMELIST (reference: the Deck's game page) =====
+        Hero (the game image) across the whole width, the action row under it (Play, last session, times played,
+        square buttons on the right), a separator with the system name, then the game list in a translucent box
+        and the name + description beside it. Below the hero the page is the system's art, blurred and tinted,
+        lighter right under the image and darker towards the bottom - not a flat colour. -->
+   <view name="basic, detailed">
+      <image name="e_bg" extra="true">
+         <path>${spacerImage}</path>
+         <color>${bgColor}</color>
+         <zIndex>0</zIndex>
+      </image>
+      <image name="e_gl" extra="true">
+         <path>${glPath}/${system.theme}.jpg</path>
+         <zIndex>2</zIndex>
+      </image>
+      <!-- Hero: the game image, cover-scaled and centred; e_info_bg (the same pixels as the page) hides whatever
+           part of it overflows below the hero box -->
+      <image name="e_image_bg" extra="true">
+         <path>${spacerImage}</path>
+         <color>${slotColor}</color>
+         <zIndex>12</zIndex>
+      </image>
+      <image name="md_image">
+         <origin>0.5 0.5</origin>
+         <zIndex>15</zIndex>
+      </image>
+      <image name="e_info_bg" extra="true">
+         <path>${glInfoPath}/${system.theme}.jpg</path>
+         <zIndex>18</zIndex>
+      </image>
+      <!-- The game's logo over the hero, as on the Deck (only when the gamelist has a marquee) -->
+      <image name="md_marquee">
+         <origin>0.5 0.5</origin>
+         <zIndex>19</zIndex>
+      </image>
+      <!-- Soft dark fade at the top of the hero so the battery, clock and icons stay readable -->
+      <image name="e_top_scrim" extra="true">
+         <path>./_inc/images/scrim.png</path>
+         <zIndex>40</zIndex>
+      </image>
+      <image name="logo"><pos>2 2</pos></image>
+
+      <!-- Action row -->
+      <image name="e_play_button" extra="true">
+         <path>${playImage}</path>
+         <color>${playColor}</color>
+         <zIndex>20</zIndex>
+      </image>
+      <!-- the triangle is its own white image: inside the button svg it would take the button's green tint -->
+      <image name="e_play_icon" extra="true">
+         <path>./_inc/images/icon-play-small.svg</path>
+         <color>ffffff</color>
+         <zIndex>21</zIndex>
+      </image>
+      <text name="e_play_text" extra="true">
+         <text>${playLabel}</text>
+         <fontPath>${fontBold}</fontPath>
+         <color>ffffff</color>
+         <alignment>left</alignment>
+         <verticalAlignment>center</verticalAlignment>
+         <zIndex>25</zIndex>
+      </text>
+      <text name="md_lbl_lastplayed">
+         <text>${lastPlayedLabel}</text>
+         <fontPath>${fontBold}</fontPath>
+         <color>${textMutedColor}</color>
+         <alignment>left</alignment>
+         <verticalAlignment>center</verticalAlignment>
+         <zIndex>25</zIndex>
+      </text>
+      <datetime name="md_lastplayed">
+         <fontPath>${fontBold}</fontPath>
+         <color>${textColor}</color>
+         <alignment>left</alignment>
+         <verticalAlignment>center</verticalAlignment>
+         <!-- absolute date in each language's order (dateFormat in _inc/lang): ES builds the relative text
+              ("9 minutes ago") in English whatever the language; never played shows ES's translated "unknown" -->
+         <displayRelative>false</displayRelative>
+         <format>${dateFormat}</format>
+         <zIndex>25</zIndex>
+      </datetime>
+      <text name="md_lbl_playcount">
+         <text>${playCountLabel}</text>
+         <fontPath>${fontBold}</fontPath>
+         <color>${textMutedColor}</color>
+         <alignment>left</alignment>
+         <verticalAlignment>center</verticalAlignment>
+         <zIndex>25</zIndex>
+      </text>
+      <text name="md_playcount">
+         <fontPath>${fontBold}</fontPath>
+         <color>${textColor}</color>
+         <alignment>left</alignment>
+         <verticalAlignment>center</verticalAlignment>
+         <zIndex>25</zIndex>
+      </text>
+      <image name="e_btn_pad" extra="true">
+         <path>${spacerImage}</path>
+         <color>${boxColor}</color>
+         <zIndex>20</zIndex>
+      </image>
+      <image name="e_btn_pad_icon" extra="true">
+         <path>./_inc/images/icon-gamepad.svg</path>
+         <color>${textColor}</color>
+         <zIndex>25</zIndex>
+      </image>
+      <image name="e_btn_gear" extra="true">
+         <path>${spacerImage}</path>
+         <color>${boxColor}</color>
+         <zIndex>20</zIndex>
+      </image>
+      <image name="e_btn_gear_icon" extra="true">
+         <path>./_inc/images/icon-gear.svg</path>
+         <color>${textColor}</color>
+         <zIndex>25</zIndex>
+      </image>
+
+      <!-- Separator with the system name in the middle (the Deck's "STEAM CLOUD: UP TO DATE" line) -->
+      <image name="e_sep_l" extra="true">
+         <path>${spacerImage}</path>
+         <color>${separatorColor}</color>
+         <zIndex>20</zIndex>
+      </image>
+      <image name="e_sep_r" extra="true">
+         <path>${spacerImage}</path>
+         <color>${separatorColor}</color>
+         <zIndex>20</zIndex>
+      </image>
+      <text name="logoText">
+         <fontPath>${fontBold}</fontPath>
+         <color>${textSoftColor}</color>
+         <alignment>center</alignment>
+         <verticalAlignment>center</verticalAlignment>
+         <forceUppercase>true</forceUppercase>
+         <zIndex>25</zIndex>
+      </text>
+
+      <!-- Game list in a translucent box with square corners (the Deck's section boxes) -->
+      <image name="e_list_box" extra="true">
+         <path>${spacerImage}</path>
+         <color>${boxColor}</color>
+         <zIndex>20</zIndex>
+      </image>
+      <textlist name="gamelist">
+         <scrollSound>./_inc/sounds/browse.wav</scrollSound>
+         <primaryColor>${textSoftColor}</primaryColor>
+         <secondaryColor>${textMutedColor}</secondaryColor>
+         <selectedColor>${textColor}</selectedColor>
+         <selectorColor>${selectorColor}</selectorColor>
+         <fontPath>${fontRegular}</fontPath>
+         <alignment>left</alignment>
+         <forceUppercase>false</forceUppercase>
+         <zIndex>30</zIndex>
+      </textlist>
+      <text name="md_name">
+         <fontPath>${fontBold}</fontPath>
+         <color>${textColor}</color>
+         <alignment>left</alignment>
+         <verticalAlignment>center</verticalAlignment>
+         <zIndex>25</zIndex>
+      </text>
+      <text name="md_description">
+         <fontPath>${fontRegular}</fontPath>
+         <color>${textMutedColor}</color>
+         <alignment>left</alignment>
+         <zIndex>25</zIndex>
+      </text>
+   </view>
+
+   <!-- ===== Bottom bar (STEAM + MENU | A, B), system and gamelist ===== -->
+   <view name="system, basic, detailed">
+      <!-- Top-right corner, as on the Deck: search, notifications, network, clock (screen view) and the avatar -->
+      <image name="e_top_search" extra="true">
+         <path>./_inc/images/icon-search.svg</path>
+         <color>${clockColor}</color>
+         <zIndex>100</zIndex>
+      </image>
+      <image name="e_top_bell" extra="true">
+         <path>./_inc/images/icon-bell.svg</path>
+         <color>${clockColor}</color>
+         <zIndex>100</zIndex>
+      </image>
+      <image name="e_top_globe" extra="true">
+         <path>./_inc/images/icon-globe.svg</path>
+         <color>${clockColor}</color>
+         <zIndex>100</zIndex>
+      </image>
+      <image name="e_top_avatar" extra="true">
+         <path>./_inc/images/avatar.png</path>
+         <zIndex>100</zIndex>
+      </image>
+      <image name="e_top_bar" extra="true">
+         <path>${spacerImage}</path>
+         <color>${accentColor}</color>
+         <zIndex>100</zIndex>
+      </image>
+      <image name="e_bar" extra="true">
+         <path>${footerImage}</path>
+         <zIndex>85</zIndex>
+      </image>
+      <image name="e_help_steam_pill" extra="true">
+         <path>${pillImage}</path>
+         <color>${pillColor}</color>
+         <zIndex>90</zIndex>
+      </image>
+      <text name="e_help_steam_text" extra="true">
+         <text>STEAM</text>
+         <fontPath>${fontBold}</fontPath>
+         <color>${pillTextColor}</color>
+         <alignment>center</alignment>
+         <verticalAlignment>center</verticalAlignment>
+         <zIndex>95</zIndex>
+      </text>
+      <text name="e_help_menu_text" extra="true">
+         <text>${helpMenu}</text>
+         <fontPath>${fontBold}</fontPath>
+         <color>${textColor}</color>
+         <alignment>left</alignment>
+         <verticalAlignment>center</verticalAlignment>
+         <forceUppercase>true</forceUppercase>
+         <zIndex>95</zIndex>
+      </text>
+      <image name="e_help_a_circle" extra="true">
+         <path>${circleImage}</path>
+         <color>${pillColor}</color>
+         <zIndex>90</zIndex>
+      </image>
+      <text name="e_help_a_letter" extra="true">
+         <text>A</text>
+         <fontPath>${fontBold}</fontPath>
+         <color>${pillTextColor}</color>
+         <alignment>center</alignment>
+         <verticalAlignment>center</verticalAlignment>
+         <zIndex>95</zIndex>
+      </text>
+      <text name="e_help_a_text" extra="true">
+         <text>${helpSelect}</text>
+         <fontPath>${fontBold}</fontPath>
+         <color>${textColor}</color>
+         <alignment>left</alignment>
+         <verticalAlignment>center</verticalAlignment>
+         <forceUppercase>true</forceUppercase>
+         <zIndex>95</zIndex>
+      </text>
+      <image name="e_help_b_circle" extra="true">
+         <path>${circleImage}</path>
+         <color>${pillColor}</color>
+         <zIndex>90</zIndex>
+      </image>
+      <text name="e_help_b_letter" extra="true">
+         <text>B</text>
+         <fontPath>${fontBold}</fontPath>
+         <color>${pillTextColor}</color>
+         <alignment>center</alignment>
+         <verticalAlignment>center</verticalAlignment>
+         <zIndex>95</zIndex>
+      </text>
+      <text name="e_help_b_text" extra="true">
+         <text>${helpBack}</text>
+         <fontPath>${fontBold}</fontPath>
+         <color>${textColor}</color>
+         <alignment>left</alignment>
+         <verticalAlignment>center</verticalAlignment>
+         <forceUppercase>true</forceUppercase>
+         <zIndex>95</zIndex>
+      </text>
+   </view>
+
+   <include subset="aspect-ratio" name="4-3">./aspect-ratio-4-3.xml</include>
+</theme>

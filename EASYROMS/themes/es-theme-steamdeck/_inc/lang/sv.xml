@@ -1,0 +1,28 @@
+<theme>
+   <formatVersion>7</formatVersion>
+   <variables lang="sv">
+      <helpMenu>MENY</helpMenu>
+      <helpSelect>VÄLJ</helpSelect>
+      <aspectRatioLabel>Bildförhållande</aspectRatioLabel>
+      <colorSchemeLabel>Färgschema</colorSchemeLabel>
+      <darkLabel>Mörkt</darkLabel>
+      <lightLabel>Ljust</lightLabel>
+      <helpBack>TILLBAKA</helpBack>
+      <libraryLabel>BIBLIOTEK</libraryLabel>
+      <favoritesLabel>FAVORITER</favoritesLabel>
+      <recentTabLabel>SENASTE</recentTabLabel>
+      <playLabel>Spela</playLabel>
+      <lastPlayedLabel>SENASTE SESSION</lastPlayedLabel>
+      <playCountLabel>GÅNGER SPELAT</playCountLabel>
+      <bannerLang>-sv</bannerLang>
+      <dateFormat>%Y-%m-%d</dateFormat>
+      <helpACircleX>0.6568</helpACircleX>
+      <helpATextX>0.6993</helpATextX>
+      <helpATextW>0.0685</helpATextW>
+      <helpBCircleX>0.7990</helpBCircleX>
+      <helpBTextX>0.8416</helpBTextX>
+      <helpBTextW>0.1428</helpBTextW>
+      <tabPillX>0.2089</tabPillX>
+      <tabPillW>0.1822</tabPillW>
+   </variables>
+</theme>

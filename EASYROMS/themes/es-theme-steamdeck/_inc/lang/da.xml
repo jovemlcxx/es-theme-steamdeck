@@ -1,0 +1,28 @@
+<theme>
+   <formatVersion>7</formatVersion>
+   <variables lang="da">
+      <helpMenu>MENU</helpMenu>
+      <helpSelect>VÆLG</helpSelect>
+      <aspectRatioLabel>Billedformat</aspectRatioLabel>
+      <colorSchemeLabel>Farveskema</colorSchemeLabel>
+      <darkLabel>Mørk</darkLabel>
+      <lightLabel>Lys</lightLabel>
+      <helpBack>TILBAGE</helpBack>
+      <libraryLabel>BIBLIOTEK</libraryLabel>
+      <favoritesLabel>FAVORITTER</favoritesLabel>
+      <recentTabLabel>SENESTE</recentTabLabel>
+      <playLabel>Spil</playLabel>
+      <lastPlayedLabel>SENESTE SESSION</lastPlayedLabel>
+      <playCountLabel>GANGE SPILLET</playCountLabel>
+      <bannerLang>-da</bannerLang>
+      <dateFormat>%d.%m.%Y</dateFormat>
+      <helpACircleX>0.6568</helpACircleX>
+      <helpATextX>0.6993</helpATextX>
+      <helpATextW>0.0875</helpATextW>
+      <helpBCircleX>0.8181</helpBCircleX>
+      <helpBTextX>0.8606</helpBTextX>
+      <helpBTextW>0.1237</helpBTextW>
+      <tabPillX>0.2089</tabPillX>
+      <tabPillW>0.1822</tabPillW>
+   </variables>
+</theme>

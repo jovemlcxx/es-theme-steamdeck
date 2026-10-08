@@ -1,0 +1,28 @@
+<theme>
+   <formatVersion>7</formatVersion>
+   <variables lang="nl">
+      <helpMenu>MENU</helpMenu>
+      <helpSelect>SELECTEER</helpSelect>
+      <aspectRatioLabel>Beeldverhouding</aspectRatioLabel>
+      <colorSchemeLabel>Kleurenschema</colorSchemeLabel>
+      <darkLabel>Donker</darkLabel>
+      <lightLabel>Licht</lightLabel>
+      <helpBack>TERUG</helpBack>
+      <libraryLabel>BIBLIOTHEEK</libraryLabel>
+      <favoritesLabel>FAVORIETEN</favoritesLabel>
+      <recentTabLabel>RECENT</recentTabLabel>
+      <playLabel>Spelen</playLabel>
+      <lastPlayedLabel>LAATSTE SESSIE</lastPlayedLabel>
+      <playCountLabel>KEER GESPEELD</playCountLabel>
+      <bannerLang>-nl</bannerLang>
+      <dateFormat>%d-%m-%Y</dateFormat>
+      <helpACircleX>0.6187</helpACircleX>
+      <helpATextX>0.6612</helpATextX>
+      <helpATextW>0.1523</helpATextW>
+      <helpBCircleX>0.8448</helpBCircleX>
+      <helpBTextX>0.8873</helpBTextX>
+      <helpBTextW>0.0971</helpBTextW>
+      <tabPillX>0.1917</tabPillX>
+      <tabPillW>0.2165</tabPillW>
+   </variables>
+</theme>

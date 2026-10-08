@@ -1,0 +1,28 @@
+<theme>
+   <formatVersion>7</formatVersion>
+   <variables lang="cs">
+      <helpMenu>MENU</helpMenu>
+      <helpSelect>VYBRAT</helpSelect>
+      <aspectRatioLabel>Poměr stran</aspectRatioLabel>
+      <colorSchemeLabel>Barevné schéma</colorSchemeLabel>
+      <darkLabel>Tmavé</darkLabel>
+      <lightLabel>Světlé</lightLabel>
+      <helpBack>ZPĚT</helpBack>
+      <libraryLabel>KNIHOVNA</libraryLabel>
+      <favoritesLabel>OBLÍBENÉ</favoritesLabel>
+      <recentTabLabel>NEDÁVNÉ</recentTabLabel>
+      <playLabel>Hrát</playLabel>
+      <lastPlayedLabel>POSLEDNÍ RELACE</lastPlayedLabel>
+      <playCountLabel>POČET HRANÍ</playCountLabel>
+      <bannerLang>-cs</bannerLang>
+      <dateFormat>%d.%m.%Y</dateFormat>
+      <helpACircleX>0.6777</helpACircleX>
+      <helpATextX>0.7203</helpATextX>
+      <helpATextW>0.1161</helpATextW>
+      <helpBCircleX>0.8677</helpBCircleX>
+      <helpBTextX>0.9102</helpBTextX>
+      <helpBTextW>0.0742</helpBTextW>
+      <tabPillX>0.2051</tabPillX>
+      <tabPillW>0.1898</tabPillW>
+   </variables>
+</theme>

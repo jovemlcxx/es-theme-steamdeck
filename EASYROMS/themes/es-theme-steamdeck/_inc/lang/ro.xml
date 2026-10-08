@@ -1,0 +1,28 @@
+<theme>
+   <formatVersion>7</formatVersion>
+   <variables lang="ro">
+      <helpMenu>MENIU</helpMenu>
+      <helpSelect>SELECTARE</helpSelect>
+      <aspectRatioLabel>Raport aspect</aspectRatioLabel>
+      <colorSchemeLabel>Schemă de culori</colorSchemeLabel>
+      <darkLabel>Întunecat</darkLabel>
+      <lightLabel>Deschis</lightLabel>
+      <helpBack>ÎNAPOI</helpBack>
+      <libraryLabel>BIBLIOTECĂ</libraryLabel>
+      <favoritesLabel>FAVORITE</favoritesLabel>
+      <recentTabLabel>RECENTE</recentTabLabel>
+      <playLabel>Joacă</playLabel>
+      <lastPlayedLabel>ULTIMA SESIUNE</lastPlayedLabel>
+      <playCountLabel>NUMĂR DE RULĂRI</playCountLabel>
+      <bannerLang>-ro</bannerLang>
+      <dateFormat>%d.%m.%Y</dateFormat>
+      <helpACircleX>0.5996</helpACircleX>
+      <helpATextX>0.6421</helpATextX>
+      <helpATextW>0.1542</helpATextW>
+      <helpBCircleX>0.8276</helpBCircleX>
+      <helpBTextX>0.8702</helpBTextX>
+      <helpBTextW>0.1142</helpBTextW>
+      <tabPillX>0.1994</tabPillX>
+      <tabPillW>0.2013</tabPillW>
+   </variables>
+</theme>

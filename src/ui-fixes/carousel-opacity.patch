@@ -1,0 +1,58 @@
+diff --git a/es-app/src/views/SystemView.cpp b/es-app/src/views/SystemView.cpp
+index 67a2332..fb55269 100644
+--- a/es-app/src/views/SystemView.cpp
++++ b/es-app/src/views/SystemView.cpp
+@@ -1033,8 +1033,9 @@ void SystemView::renderCarousel(const Transform4x4f& trans)
+ 		scale = Math::min(mCarousel.logoScale, Math::max(1.0f, scale));
+ 		scale /= mCarousel.logoScale;
+ 
+-		int opacity = (int)Math::round(0x80 + ((0xFF - 0x80) * (1.0f - fabs(distance))));
+-		opacity = Math::max((int) 0x80, opacity);
++		const int minOpacity = (int)Math::round(0xFF * mCarousel.unselectedOpacity);
++		int opacity = (int)Math::round(minOpacity + ((0xFF - minOpacity) * (1.0f - fabs(distance))));
++		opacity = Math::max(minOpacity, opacity);
+ 
+ 		const std::shared_ptr<GuiComponent> &comp = mEntries.at(index).data.logo;
+ 		if (mCarousel.type == VERTICAL_WHEEL || mCarousel.type == HORIZONTAL_WHEEL) {
+@@ -1297,6 +1298,7 @@ void  SystemView::getDefaultElements(void)
+ 	mCarousel.zIndex = 40;
+ 	mCarousel.systemInfoDelay = 2000;
+ 	mCarousel.scrollSound = "";
++	mCarousel.unselectedOpacity = 0x80 / 255.0f;
+ 	mCarousel.defaultTransition = "";
+ 
+ 	// System Info Bar
+@@ -1384,6 +1386,9 @@ void SystemView::getCarouselFromTheme(const ThemeData::ThemeElement* elem)
+ 	if (elem->has("scrollSound"))
+ 		mCarousel.scrollSound = elem->get<std::string>("scrollSound");
+ 
++	if (elem->has("unselectedOpacity"))
++		mCarousel.unselectedOpacity = Math::max(0.0f, Math::min(1.0f, elem->get<float>("unselectedOpacity")));
++
+ 	if (elem->has("defaultTransition"))
+ 		mCarousel.defaultTransition = elem->get<std::string>("defaultTransition");
+ }
+diff --git a/es-app/src/views/SystemView.h b/es-app/src/views/SystemView.h
+index a5c1142..4e88711 100644
+--- a/es-app/src/views/SystemView.h
++++ b/es-app/src/views/SystemView.h
+@@ -51,6 +51,7 @@ struct SystemViewCarousel
+ 
+ 	std::string		defaultTransition;
+ 	std::string		scrollSound;
++	float			unselectedOpacity; // opacity of the logos that are not selected (stock: 0.5)
+ };
+ 
+ class SystemView : public IList<SystemViewData, SystemData*>
+diff --git a/es-core/src/ThemeData.cpp b/es-core/src/ThemeData.cpp
+index f0d92f5..ff7f081 100644
+--- a/es-core/src/ThemeData.cpp
++++ b/es-core/src/ThemeData.cpp
+@@ -248,6 +248,7 @@ std::map<std::string, std::map<std::string, ThemeData::ElementPropertyType>> The
+ 		{ "systemInfoDelay", FLOAT },	
+ 		{ "defaultTransition", STRING },
+ 		{ "scrollSound", PATH },
++		{ "unselectedOpacity", FLOAT },
+ 		{ "zIndex", FLOAT } } },
+ 	{ "menuText", {
+ 		{ "fontPath", PATH },

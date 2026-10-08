@@ -1,0 +1,28 @@
+<theme>
+   <formatVersion>7</formatVersion>
+   <variables lang="el">
+      <helpMenu>ΜΕΝΟΥ</helpMenu>
+      <helpSelect>ΕΠΙΛΟΓΗ</helpSelect>
+      <aspectRatioLabel>Αναλογία Εικόνας</aspectRatioLabel>
+      <colorSchemeLabel>Χρωματικό Σχήμα</colorSchemeLabel>
+      <darkLabel>Σκοτεινό</darkLabel>
+      <lightLabel>Φωτεινό</lightLabel>
+      <helpBack>ΠΙΣΩ</helpBack>
+      <libraryLabel>ΒΙΒΛΙΟΘΗΚΗ</libraryLabel>
+      <favoritesLabel>ΑΓΑΠΗΜΕΝΑ</favoritesLabel>
+      <recentTabLabel>ΠΡΟΣΦΑΤΑ</recentTabLabel>
+      <playLabel>Παίξτε</playLabel>
+      <lastPlayedLabel>ΤΕΛΕΥΤΑΙΑ ΣΥΝΕΔΡΙΑ</lastPlayedLabel>
+      <playCountLabel>ΦΟΡΕΣ ΠΑΙΧΝΙΔΙΟΥ</playCountLabel>
+      <bannerLang>-el</bannerLang>
+      <dateFormat>%d/%m/%Y</dateFormat>
+      <helpACircleX>0.6625</helpACircleX>
+      <helpATextX>0.7050</helpATextX>
+      <helpATextW>0.1295</helpATextW>
+      <helpBCircleX>0.8657</helpBCircleX>
+      <helpBTextX>0.9083</helpBTextX>
+      <helpBTextW>0.0761</helpBTextW>
+      <tabPillX>0.1936</tabPillX>
+      <tabPillW>0.2127</tabPillW>
+   </variables>
+</theme>
