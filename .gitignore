@@ -1,0 +1,10 @@
+# scraper credentials (never published)
+scraper.env
+# build outputs of src/ui-fixes: compiled binaries, packed installers, logs
+src/ui-fixes/systems/*/emulationstation
+src/tools/
+src/ui-fixes/build-*.log
+# EmulationStation sources cloned next to ui-fixes to build
+src/EmulationStation-fcamod*/
+# release zips: published on GitHub Releases, not committed (python src/make-zips.py rebuilds them)
+*.zip

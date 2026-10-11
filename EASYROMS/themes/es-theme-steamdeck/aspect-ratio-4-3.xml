@@ -16,15 +16,15 @@
    <!-- Bottom bar -->
    <view name="system, basic, detailed">
       <image name="e_top_search" extra="true">
-         <pos>0.7031 0.0250</pos>
+         <pos>0.6265 0.0250</pos>
          <size>0.0297 0.0396</size>
       </image>
       <image name="e_top_bell" extra="true">
-         <pos>0.7484 0.0250</pos>
+         <pos>0.6718 0.0250</pos>
          <size>0.0297 0.0396</size>
       </image>
       <image name="e_top_globe" extra="true">
-         <pos>0.7937 0.0250</pos>
+         <pos>0.7171 0.0250</pos>
          <size>0.0297 0.0396</size>
       </image>
       <image name="e_top_bar" extra="true">
