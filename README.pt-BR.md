@@ -2,7 +2,7 @@
 
 [EN](README.md) · **BR**
 
-![Plataforma](https://img.shields.io/badge/Plataforma-EmulationStation-8A2BE2?style=flat-square) ![Estilo](https://img.shields.io/badge/Estilo-Steam_Deck-1E90FF?style=flat-square) ![Aparelho](https://img.shields.io/badge/Aparelho-R36S-2EA043?style=flat-square) [![Licença](https://img.shields.io/badge/Licen%C3%A7a-CC_BY--NC_4.0-lightgrey?style=flat-square)](LICENSE) [![GitHub](https://img.shields.io/badge/GitHub-Reposit%C3%B3rio-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/jovemlcxx/es-theme-steamdeck) [![Reddit](https://img.shields.io/badge/Reddit-u%2Fjovemlcxx-FF4500?style=flat-square&logo=reddit&logoColor=white)](https://www.reddit.com/user/jovemlcxx/) [![Ko-fi](https://img.shields.io/badge/Ko--fi-Apoie-FF5E5B?style=flat-square&logo=ko-fi&logoColor=white)](https://ko-fi.com/jovemlcxx)
+![Plataforma](https://img.shields.io/badge/Plataforma-EmulationStation-8A2BE2?style=flat-square) [![Licença](https://img.shields.io/badge/Licen%C3%A7a-CC_BY--NC_4.0-lightgrey?style=flat-square)](LICENSE) [![Reddit](https://img.shields.io/badge/Reddit-u%2Fjovemlcxx-FF4500?style=flat-square&logo=reddit&logoColor=white)](https://www.reddit.com/user/jovemlcxx/) [![Ko-fi](https://img.shields.io/badge/Ko--fi-Apoie-FF5E5B?style=flat-square&logo=ko-fi&logoColor=white)](https://ko-fi.com/jovemlcxx)
 
 Tema no estilo do Steam Deck para o **EmulationStation-fcamod** no **R36S** e clones (família ArkOS, 640×480), com dois extras opcionais: **vídeo de boot** e **UI Fixes** (carrossel opaco e sons extras).
 
