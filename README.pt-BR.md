@@ -43,7 +43,7 @@ EASYROMS/                        -> partição de jogos (/roms)
 1. **START → Configurações de interface → Tema → es-theme-steamdeck**. Escuro/claro fica no mesmo menu.
 2. Opcional: rode os scripts em **Opções → Tools** (veja [Vídeo de boot](#vídeo-de-boot) e [UI Fixes](#steam-deck-ui-fixes)).
 
-O repositório tem os mesmos arquivos descompactados (`BOOT/`, `EASYROMS/` com o que todos os sistemas compartilham, e `UI Fixes/<sistema>/` com o instalador de cada um). Os zips não são commitados: ficam na página de Releases, e `python src/make-zips.py` os refaz.
+Este repositório contém só os arquivos do tema, então dá para instalar apenas o tema clonando (ou baixando o repositório) em `themes/es-theme-steamdeck`. Os zips da página de Releases acrescentam o vídeo de boot e o instalador do UI Fixes de cada sistema.
 
 ## O tema
 
@@ -77,24 +77,17 @@ O ES dessa família desenha os itens não selecionados do carrossel com 50% de o
 
 Cada instalador confere o EmulationStation que já está no aparelho e **se recusa a rodar se não for o que ele espera**, então rodar o arquivo errado não altera nada. Também confere a arquitetura e as bibliotecas antes. Uma atualização do sistema que troque o ES desfaz o fix — é só rodar o instalador de novo.
 
-<details><summary>Compilar do código-fonte</summary>
+<details><summary>De que cada build é feito</summary>
 
-Fontes (`src/ui-fixes` tem os dois patches + `build.sh`/`pack.sh`). Cada sistema é compilado do seu próprio fork do ES, num container Docker Debian 10 arm64 (glibc antiga):
+O instalador de cada sistema carrega um build do **próprio** código do EmulationStation dele, com apenas as duas funções acima acrescentadas, compilado num container Debian 10 arm64 (glibc antiga):
 
 | Sistema | Fonte do ES |
 |---|---|
-| arkos4clone | [lcdyk0517/EmulationStation-fcamod](https://github.com/lcdyk0517/EmulationStation-fcamod) `dev` |
-| dArkOS, dArkOSRE, ArkOS | [christianhaitian/EmulationStation-fcamod](https://github.com/christianhaitian/EmulationStation-fcamod) `503noTTS` |
+| arkos4clone, dArkOS4Clone | [lcdyk0517/EmulationStation-fcamod](https://github.com/lcdyk0517/EmulationStation-fcamod) `dev` |
+| dArkOS, dArkOSRE-R36, ArkOS | [christianhaitian/EmulationStation-fcamod](https://github.com/christianhaitian/EmulationStation-fcamod) `503noTTS` |
 | dArkOSen | [djparentx/EmulationStation-fcamod-dArkOS-EN](https://github.com/djparentx/EmulationStation-fcamod-dArkOS-EN) |
 
-Cada sistema tem um `src/ui-fixes/systems/<sistema>/system.env` (`arkos`, `arkos4clone`, `darkos`, `darkosre`, `darkosen`) com o nome e as strings da trava. Clone a fonte do ES dentro de `src/`, depois compile e empacote, por exemplo para o dArkOS:
-
-```bash
-git clone --recursive -b 503noTTS https://github.com/christianhaitian/EmulationStation-fcamod.git src/EmulationStation-fcamod-chmod
-bash src/ui-fixes/build.sh EmulationStation-fcamod-chmod darkos   # aplica os dois patches, compila (~10-15 min)
-bash src/ui-fixes/pack.sh darkos                                  # -> src/tools/Enable Steam Deck UI Fixes (dArkOS).sh
-```
-As credenciais do scraper (opcional) vão em `src/ui-fixes/scraper.env`. Fontes, binários e credenciais são ignorados pelo git.
+Os dois patches são diffs pequenos (a propriedade `unselectedOpacity` do carrossel e os sons extras do tema). Os scripts de build não fazem parte deste repositório; abra uma issue se quiser.
 </details>
 
 ## Compatibilidade
