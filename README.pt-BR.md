@@ -19,8 +19,6 @@ Copie a pasta `es-theme-steamdeck` (clone este repositório ou baixe como zip) p
 
 Depois **START → Configurações de interface → Tema → es-theme-steamdeck**. Escuro/claro, a visão de sistemas e o idioma ficam no mesmo menu (**Configurações do tema**).
 
-O repositório contém só o tema: sem scripts, instaladores nem EmulationStation modificado.
-
 ## O tema
 
 - Uma **capa vertical de mesmo tamanho** por sistema (192×288, 2:3, como na biblioteca da Steam): a arte do sistema vinda do tema [ARTFLIX](https://github.com/fagnerpc/Alekfull-ARTFLIX), a logo do próprio sistema e um contorno fino. Sistemas sem arte lá usam o cartão cinza da Steam com a logo.

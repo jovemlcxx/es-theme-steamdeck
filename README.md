@@ -19,8 +19,6 @@ Copy the `es-theme-steamdeck` folder (clone this repository or download it as a 
 
 Then **START → UI Settings → Theme Set → es-theme-steamdeck**. Dark/light, the system view and the language options are in the same menu (**Theme Settings**).
 
-The repository holds only the theme: no scripts, installers or patched EmulationStation.
-
 ## The theme
 
 - One **same-size vertical capsule** per system (192×288, 2:3, as in the Steam library): the system's artwork from the [ARTFLIX](https://github.com/fagnerpc/Alekfull-ARTFLIX) theme, the system's own logo and a thin outline. Systems with no artwork there get Steam's grey card with the logo.

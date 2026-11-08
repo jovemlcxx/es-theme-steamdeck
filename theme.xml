@@ -172,7 +172,7 @@
    <!-- ===== SYSTEM VIEW (reference: "Jogos recentes" screen) ===== -->
    <!-- Sounds: the Steam Deck UI sounds. Moving through the carousel and the lists is the scrollSound of the carousel and
         the textlist (the same navigation sound); launch is a sound element; select / back / favorite / quicksysselect are played only by ES
-        builds with the sounds patch (es-fcamod-sounds) and ignored by the others. -->
+        builds that support them and ignored by the others. -->
    <view name="system, basic, detailed">
       <sound name="select"><path>./_inc/sounds/select.wav</path></sound>
       <sound name="back"><path>./_inc/sounds/back.wav</path></sound>
@@ -228,7 +228,7 @@
          <scrollSound>./_inc/sounds/browse.wav</scrollSound>
          <!-- Opacity of the systems that are not selected (stock 0.5). Batocera, Knulli, EmuELEC and ArchR (ES-next family)
               read minLogoOpacity natively; the fcamod ES (ArkOS, dArkOS, arkos4clone) hard-codes 0.5 and only honours
-              unselectedOpacity with the "Steam Deck UI Fixes" build (es-fcamod-sounds). Each ES ignores the other. -->
+              unselectedOpacity in builds that support it. Each ES ignores the other. -->
          <minLogoOpacity>1</minLogoOpacity>
          <unselectedOpacity>1</unselectedOpacity>
          <logoAlignment>center</logoAlignment>
