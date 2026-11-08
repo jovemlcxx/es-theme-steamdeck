@@ -24,5 +24,8 @@
       <helpBTextW>0.1028</helpBTextW>
       <tabPillX>0.2070</tabPillX>
       <tabPillW>0.1860</tabPillW>
+      <systemViewLabel>Rendszernézet</systemViewLabel>
+      <systemViewFullLabel>Teljes</systemViewFullLabel>
+      <systemViewCarouselLabel>Csak körhinta</systemViewCarouselLabel>
    </variables>
 </theme>

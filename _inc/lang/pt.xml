@@ -24,5 +24,8 @@
       <helpBTextW>0.1161</helpBTextW>
       <tabPillX>0.1994</tabPillX>
       <tabPillW>0.2013</tabPillW>
+      <systemViewLabel>Vista de Sistemas</systemViewLabel>
+      <systemViewFullLabel>Completa</systemViewFullLabel>
+      <systemViewCarouselLabel>Apenas carrossel</systemViewCarouselLabel>
    </variables>
 </theme>

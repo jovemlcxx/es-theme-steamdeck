@@ -24,5 +24,8 @@
       <helpBTextW>0.0628</helpBTextW>
       <tabPillX>0.2642</tabPillX>
       <tabPillW>0.0717</tabPillW>
+      <systemViewLabel>系统视图</systemViewLabel>
+      <systemViewFullLabel>完整</systemViewFullLabel>
+      <systemViewCarouselLabel>仅轮播</systemViewCarouselLabel>
    </variables>
 </theme>

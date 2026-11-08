@@ -24,5 +24,8 @@
       <helpBTextW>0.0742</helpBTextW>
       <tabPillX>0.2051</tabPillX>
       <tabPillW>0.1898</tabPillW>
+      <systemViewLabel>Zobrazení systémů</systemViewLabel>
+      <systemViewFullLabel>Úplné</systemViewFullLabel>
+      <systemViewCarouselLabel>Pouze karusel</systemViewCarouselLabel>
    </variables>
 </theme>

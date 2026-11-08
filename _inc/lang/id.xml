@@ -24,5 +24,8 @@
       <helpBTextW>0.1333</helpBTextW>
       <tabPillX>0.2194</tabPillX>
       <tabPillW>0.1613</tabPillW>
+      <systemViewLabel>Tampilan Sistem</systemViewLabel>
+      <systemViewFullLabel>Lengkap</systemViewFullLabel>
+      <systemViewCarouselLabel>Hanya carousel</systemViewCarouselLabel>
    </variables>
 </theme>

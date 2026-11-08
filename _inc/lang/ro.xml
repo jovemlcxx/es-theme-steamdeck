@@ -24,5 +24,8 @@
       <helpBTextW>0.1142</helpBTextW>
       <tabPillX>0.1994</tabPillX>
       <tabPillW>0.2013</tabPillW>
+      <systemViewLabel>Vizualizare sisteme</systemViewLabel>
+      <systemViewFullLabel>Completă</systemViewFullLabel>
+      <systemViewCarouselLabel>Doar carusel</systemViewCarouselLabel>
    </variables>
 </theme>

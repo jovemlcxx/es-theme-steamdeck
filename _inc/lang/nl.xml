@@ -24,5 +24,8 @@
       <helpBTextW>0.0971</helpBTextW>
       <tabPillX>0.1917</tabPillX>
       <tabPillW>0.2165</tabPillW>
+      <systemViewLabel>Systeemweergave</systemViewLabel>
+      <systemViewFullLabel>Volledig</systemViewFullLabel>
+      <systemViewCarouselLabel>Alleen carrousel</systemViewCarouselLabel>
    </variables>
 </theme>

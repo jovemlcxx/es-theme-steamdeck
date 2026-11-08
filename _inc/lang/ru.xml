@@ -24,5 +24,8 @@
       <helpBTextW>0.1066</helpBTextW>
       <tabPillX>0.1870</tabPillX>
       <tabPillW>0.2261</tabPillW>
+      <systemViewLabel>Вид систем</systemViewLabel>
+      <systemViewFullLabel>Полный</systemViewFullLabel>
+      <systemViewCarouselLabel>Только карусель</systemViewCarouselLabel>
    </variables>
 </theme>

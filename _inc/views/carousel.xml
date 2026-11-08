@@ -1,0 +1,32 @@
+<theme>
+   <formatVersion>7</formatVersion>
+   <!-- System view with the carousel only: no PortMaster / system banner, no Library-Favorites-Recent pills, no footer blur.
+        Without the banner the covers grow (still 2:3: 0.26 x 0.52 of a 4:3 screen) and everything sits lower, centred in the page. -->
+   <view name="system">
+      <image name="e_banner_bg" extra="true"><visible>false</visible></image>
+      <image name="e_banner_default" extra="true"><visible>false</visible></image>
+      <image name="e_system_banner" extra="true"><visible>false</visible></image>
+      <image name="e_bar_blur_default" extra="true"><visible>false</visible></image>
+      <image name="e_bar_blur" extra="true"><visible>false</visible></image>
+      <image name="e_tab1_pill" extra="true"><visible>false</visible></image>
+      <text name="e_tab1" extra="true"><visible>false</visible></text>
+      <text name="e_tab2" extra="true"><visible>false</visible></text>
+      <text name="e_tab3" extra="true"><visible>false</visible></text>
+      <!-- step = size.x / maxLogoCount = 0.26 + the 0.019 gap -->
+      <carousel name="systemcarousel">
+         <pos>0 0.185</pos>
+         <size>2.232 0.53</size>
+         <logoSize>0.26 0.52</logoSize>
+      </carousel>
+      <text name="e_system_name" extra="true">
+         <pos>0.0745 0.725</pos>
+         <size>0.86 0.05</size>
+      </text>
+      <image name="e_info_play" extra="true">
+         <pos>0.0746 0.7929</pos>
+      </image>
+      <text name="systemInfo">
+         <pos>0.0993 0.785</pos>
+      </text>
+   </view>
+</theme>

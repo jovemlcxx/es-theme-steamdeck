@@ -24,5 +24,8 @@
       <helpBTextW>0.0761</helpBTextW>
       <tabPillX>0.1936</tabPillX>
       <tabPillW>0.2127</tabPillW>
+      <systemViewLabel>Προβολή Συστημάτων</systemViewLabel>
+      <systemViewFullLabel>Πλήρης</systemViewFullLabel>
+      <systemViewCarouselLabel>Μόνο καρουζέλ</systemViewCarouselLabel>
    </variables>
 </theme>

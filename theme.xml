@@ -4,6 +4,7 @@
       <fontRegular>./_inc/fonts/NotoSans-Regular.ttf</fontRegular>
       <fontBold>./_inc/fonts/NotoSans-Bold.ttf</fontBold>
       <capsulePath>./_inc/systems/capsule</capsulePath>
+      <artPath>./_inc/systems/art</artPath>
       <bannerPath>./_inc/systems/banner</bannerPath>
       <pillImage>./_inc/images/pill.svg</pillImage>
       <circleImage>./_inc/images/circle.svg</circleImage>
@@ -28,6 +29,9 @@
       <colorSchemeLabel>Color Scheme</colorSchemeLabel>
       <darkLabel>Dark</darkLabel>
       <lightLabel>Light</lightLabel>
+      <systemViewLabel>System View</systemViewLabel>
+      <systemViewFullLabel>Full</systemViewFullLabel>
+      <systemViewCarouselLabel>Carousel only</systemViewCarouselLabel>
       <bannerLang></bannerLang>
       <dateFormat>%m/%d/%Y</dateFormat>
       <!-- Defaults = dark palette. _inc/colors/dark.xml and light.xml override these. -->
@@ -93,6 +97,10 @@
 
    <subset name="aspect-ratio" displayName="${aspectRatioLabel}">
       <include name="4-3" displayName="4:3" />
+   </subset>
+   <subset name="system-view" displayName="${systemViewLabel}">
+      <include name="full" displayName="${systemViewFullLabel}" />
+      <include name="carousel" displayName="${systemViewCarouselLabel}" />
    </subset>
    <subset name="color-scheme" displayName="${colorSchemeLabel}">
       <include name="dark" displayName="${darkLabel}">./_inc/colors/dark.xml</include>
@@ -174,31 +182,47 @@
    </view>
 
    <view name="system">
-      <!-- No staticBackground: ES draws it AFTER all extras below the carousel, which would hide the per-system art.
-           The page gradient is a low-z extra instead (same file for every system, so it never fades). -->
+      <!-- The system view is built in layers (zIndex), nothing is pre-blurred or baked per system:
+             0  page colour + the system's whole picture (_inc/systems/art/<system>.jpg, 640x480, cover-scaled)
+             1  one shared gradient that dims it behind the row and fades it into the page colour, and the top scrim
+             2  banner (Full view only)
+             3  carousel
+             4  everything else: name, game count, tabs, top-right icons, footer
+           No staticBackground: ES draws it AFTER all extras below the carousel, which would hide the picture. The picture is an
+           extra, so it cross-fades between systems with the carousel's transition. -->
       <image name="e_bg_base" extra="true">
          <path>${bgImage}</path>
-         <zIndex>5</zIndex>
+         <zIndex>1</zIndex>
       </image>
-      <!-- The selected system's own capsule, scaled to cover the screen, under one shared veil that dims it behind the
-           row and fades it into the page colour (tools/gen-capsules.py overlays()).
-           Extras follow the carousel's transition, so it cross-fades between systems. -->
       <image name="e_bg_art" extra="true">
-         <path>${capsulePath}/${system.theme}.png</path>
+         <path>${artPath}/${system.theme}.jpg</path>
          <linearSmooth>true</linearSmooth>
-         <zIndex>35</zIndex>
+         <zIndex>10</zIndex>
       </image>
       <image name="e_bg_veil" extra="true">
          <path>${bgVeilImage}</path>
-         <zIndex>36</zIndex>
+         <zIndex>20</zIndex>
       </image>
-      <!-- the same soft dark fade at the top as on the game list, so the battery, clock and icons stay readable -->
       <image name="e_top_scrim" extra="true">
          <path>./_inc/images/scrim.png</path>
-         <zIndex>37</zIndex>
+         <zIndex>21</zIndex>
       </image>
-      <!-- All covers share one portrait size (no zoom, so nothing moves while scrolling); the selected one is fully
-           opaque (ES draws the others at 50%) and anchored at the left. -->
+      <!-- Layer 2: banner -->
+      <image name="e_banner_bg" extra="true">
+         <path>${spacerImage}</path>
+         <color>${slotColor}</color>
+         <zIndex>30</zIndex>
+      </image>
+      <image name="e_banner_default" extra="true">
+         <path>./_inc/images/banner-portmaster${bannerLang}.png</path>
+         <zIndex>31</zIndex>
+      </image>
+      <image name="e_system_banner" extra="true">
+         <path>${bannerPath}/${system.theme}.png</path>
+         <zIndex>32</zIndex>
+      </image>
+      <!-- Layer 3: carousel. All covers share one portrait size (no zoom, so nothing moves while scrolling); the selected one is
+           fully opaque and anchored at the left. -->
       <carousel name="systemcarousel">
          <type>horizontal</type>
          <scrollSound>./_inc/sounds/browse.wav</scrollSound>
@@ -248,7 +272,7 @@
       <image name="e_tab1_pill" extra="true">
          <path>${pillImage}</path>
          <color>${tabActiveColor}</color>
-         <zIndex>45</zIndex>
+         <zIndex>50</zIndex>
       </image>
       <text name="e_tab1" extra="true">
          <text>${libraryLabel}</text>
@@ -256,7 +280,7 @@
          <color>${textColor}</color>
          <alignment>center</alignment>
          <verticalAlignment>center</verticalAlignment>
-         <zIndex>50</zIndex>
+         <zIndex>55</zIndex>
       </text>
       <text name="e_tab2" extra="true">
          <text>${favoritesLabel}</text>
@@ -264,7 +288,7 @@
          <color>${textSoftColor}</color>
          <alignment>center</alignment>
          <verticalAlignment>center</verticalAlignment>
-         <zIndex>50</zIndex>
+         <zIndex>55</zIndex>
       </text>
       <text name="e_tab3" extra="true">
          <text>${recentTabLabel}</text>
@@ -272,21 +296,8 @@
          <color>${textSoftColor}</color>
          <alignment>center</alignment>
          <verticalAlignment>center</verticalAlignment>
-         <zIndex>50</zIndex>
+         <zIndex>55</zIndex>
       </text>
-      <image name="e_banner_bg" extra="true">
-         <path>${spacerImage}</path>
-         <color>${slotColor}</color>
-         <zIndex>43</zIndex>
-      </image>
-      <image name="e_banner_default" extra="true">
-         <path>./_inc/images/banner-portmaster${bannerLang}.png</path>
-         <zIndex>45</zIndex>
-      </image>
-      <image name="e_system_banner" extra="true">
-         <path>${bannerPath}/${system.theme}.png</path>
-         <zIndex>46</zIndex>
-      </image>
       <!-- Footer "blur": pre-blurred strip of the banner (see tools/gen-bar-blur.sh); the translucent bar goes on top -->
       <image name="e_bar_blur_default" extra="true">
          <path>./_inc/images/bar-blur-portmaster${bannerLang}.png</path>
@@ -567,4 +578,7 @@
    </view>
 
    <include subset="aspect-ratio" name="4-3">./aspect-ratio-4-3.xml</include>
+   <!-- after the aspect-ratio file, so the carousel-only view can override its positions -->
+   <include subset="system-view" name="full">./_inc/views/full.xml</include>
+   <include subset="system-view" name="carousel">./_inc/views/carousel.xml</include>
 </theme>

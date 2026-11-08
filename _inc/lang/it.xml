@@ -23,5 +23,8 @@
       <helpBTextW>0.1447</helpBTextW>
       <tabPillX>0.2175</tabPillX>
       <tabPillW>0.1651</tabPillW>
+      <systemViewLabel>Vista Sistemi</systemViewLabel>
+      <systemViewFullLabel>Completa</systemViewFullLabel>
+      <systemViewCarouselLabel>Solo carosello</systemViewCarouselLabel>
    </variables>
 </theme>

@@ -110,27 +110,27 @@
          <size>1 0.1167</size>
       </image>
       <carousel name="systemcarousel">
-         <pos>0 0.11</pos>
-         <size>1.672 0.38</size>
+         <pos>0 0.105</pos>
+         <size>1.672 0.39</size>
          <logoSize>0.19 0.38</logoSize>
          <logoPos>0.075 0</logoPos>
-         <logoAlignment>bottom</logoAlignment>
+         <logoAlignment>center</logoAlignment>
          <maxLogoCount>8</maxLogoCount>
          <origin>0 0</origin>
       </carousel>
       <!-- name and info aligned with the selected cover, as on the Deck -->
       <text name="e_system_name" extra="true">
-         <pos>0.07 0.515</pos>
+         <pos>0.0745 0.505</pos>
          <size>0.5 0.05</size>
          <origin>0 0</origin>
          <fontSize>0.035</fontSize>
       </text>
       <image name="e_info_play" extra="true">
-         <pos>0.0703 0.5729</pos>
+         <pos>0.0746 0.5779</pos>
          <size>0.0172 0.0229</size>
       </image>
       <text name="systemInfo">
-         <pos>0.095 0.565</pos>
+         <pos>0.0993 0.57</pos>
          <size>0.5 0.035</size>
          <origin>0 0</origin>
          <fontSize>0.022</fontSize>

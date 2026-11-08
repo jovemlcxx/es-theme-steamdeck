@@ -24,5 +24,8 @@
       <helpBTextW>0.0589</helpBTextW>
       <tabPillX>0.2213</tabPillX>
       <tabPillW>0.1574</tabPillW>
+      <systemViewLabel>시스템 보기</systemViewLabel>
+      <systemViewFullLabel>전체</systemViewFullLabel>
+      <systemViewCarouselLabel>캐러셀만</systemViewCarouselLabel>
    </variables>
 </theme>

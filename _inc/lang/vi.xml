@@ -24,5 +24,8 @@
       <helpBTextW>0.1409</helpBTextW>
       <tabPillX>0.2137</tabPillX>
       <tabPillW>0.1727</tabPillW>
+      <systemViewLabel>Chế độ xem hệ thống</systemViewLabel>
+      <systemViewFullLabel>Đầy đủ</systemViewFullLabel>
+      <systemViewCarouselLabel>Chỉ băng chuyền</systemViewCarouselLabel>
    </variables>
 </theme>
